@@ -4,10 +4,10 @@ export default function Navbar() {
             <a class='title' href='/'>Aada Härmä</a>
             <ul>
                 <li>
-                    <a class='info' href='App.jsx#container'>Info</a>
+                    <a class='link' href='App.jsx#container'>Info</a>
                 </li>
                 <li>
-                    <a class='portfolio' href='App.jsx#work'>Portfolio</a>
+                    <a class='link' href='App.jsx#work'>Portfolio</a>
                 </li>
             </ul>
         </nav>
