@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.61791328.css",
-    "main.js": "/static/js/main.aa25efbd.js",
-    "static/js/453.f19e9853.chunk.js": "/static/js/453.f19e9853.chunk.js",
-    "static/media/WorkSans-Regular.ttf": "/static/media/WorkSans-Regular.7c5aca8a8c320a8df026.ttf",
-    "static/media/YesevaOne-Regular.ttf": "/static/media/YesevaOne-Regular.77e7411de8c57683e277.ttf",
-    "index.html": "/index.html",
-    "main.61791328.css.map": "/static/css/main.61791328.css.map",
-    "main.aa25efbd.js.map": "/static/js/main.aa25efbd.js.map",
-    "453.f19e9853.chunk.js.map": "/static/js/453.f19e9853.chunk.js.map"
+    "main.css": "/aadaharma.github.io/static/css/main.7228f9fd.css",
+    "main.js": "/aadaharma.github.io/static/js/main.7e85bbe2.js",
+    "static/js/453.f19e9853.chunk.js": "/aadaharma.github.io/static/js/453.f19e9853.chunk.js",
+    "static/media/WorkSans-Regular.ttf": "/aadaharma.github.io/static/media/WorkSans-Regular.7c5aca8a8c320a8df026.ttf",
+    "static/media/YesevaOne-Regular.ttf": "/aadaharma.github.io/static/media/YesevaOne-Regular.77e7411de8c57683e277.ttf",
+    "index.html": "/aadaharma.github.io/index.html",
+    "main.7228f9fd.css.map": "/aadaharma.github.io/static/css/main.7228f9fd.css.map",
+    "main.7e85bbe2.js.map": "/aadaharma.github.io/static/js/main.7e85bbe2.js.map",
+    "453.f19e9853.chunk.js.map": "/aadaharma.github.io/static/js/453.f19e9853.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.61791328.css",
-    "static/js/main.aa25efbd.js"
+    "static/css/main.7228f9fd.css",
+    "static/js/main.7e85bbe2.js"
   ]
 }
