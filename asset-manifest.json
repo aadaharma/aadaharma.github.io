@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.61791328.css",
+    "main.css": "/static/css/main.15b251a3.css",
     "main.js": "/static/js/main.aa25efbd.js",
     "static/js/453.f19e9853.chunk.js": "/static/js/453.f19e9853.chunk.js",
     "static/media/WorkSans-Regular.ttf": "/static/media/WorkSans-Regular.7c5aca8a8c320a8df026.ttf",
     "static/media/YesevaOne-Regular.ttf": "/static/media/YesevaOne-Regular.77e7411de8c57683e277.ttf",
     "index.html": "/index.html",
-    "main.61791328.css.map": "/static/css/main.61791328.css.map",
+    "main.15b251a3.css.map": "/static/css/main.15b251a3.css.map",
     "main.aa25efbd.js.map": "/static/js/main.aa25efbd.js.map",
     "453.f19e9853.chunk.js.map": "/static/js/453.f19e9853.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.61791328.css",
+    "static/css/main.15b251a3.css",
     "static/js/main.aa25efbd.js"
   ]
 }
