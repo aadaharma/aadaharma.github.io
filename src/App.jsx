@@ -19,24 +19,18 @@ export default function App() {
                     I study Information Technology at Tampere University, my major being telecommunications and minor software engineering.
                   </p>
                   <p>
-                    My interests include cloud engineering, testing software and game development. Gaming is one of my dearest hobbies, and learning to program games myself has been rewarding.
-                    Aside from tech, I enjoy hiking and volunteering at a children's church.
+                    My interests include telecommunications, network design and programming. This website is my ongoing personal project, but I am also a part of small team of game developers, Rake Entertainment. 
+                    You can check out our website at: <a href="https://rake-entertainment.com ">Rake Entertainment</a>
+                    Aside from tech, I enjoy handcrafts, hiking and volunteering at a children's church.
                   </p>
                 </div>   
                 <aside id="photo">
                   <img className="portrait" src="/resumepic.JPG" alt="portrait of Aada" />
                   </aside>          
             </section>
-            //            <section id="exp" className="exp">
-            //              <h1>My work experience</h1>
-            //              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d</p>
-            //              <aside id="expdiag">
-            //                <p>Here maybe experience circle diagrams</p>
-            //              </aside>
-            //            </section>
             <section id="work" className="work">
-              <h1>Portfolio?</h1>
-              <p>Woopswoops</p>
+              <h1>Other info soon to be added!</h1>
+              <p>If you wan't to know more, send me an e-mail or feel free to call.</p>
             </section>
           </div>
       </main>
