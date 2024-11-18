@@ -27,13 +27,13 @@ export default function App() {
                   <img className="portrait" src="/resumepic.JPG" alt="portrait of Aada" />
                   </aside>          
             </section>
-            <section id="exp" className="exp">
-              <h1>My work experience</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d</p>
-              <aside id="expdiag">
-                <p>Here maybe experience circle diagrams</p>
-              </aside>
-            </section>
+            //            <section id="exp" className="exp">
+            //              <h1>My work experience</h1>
+            //              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d</p>
+            //              <aside id="expdiag">
+            //                <p>Here maybe experience circle diagrams</p>
+            //              </aside>
+            //            </section>
             <section id="work" className="work">
               <h1>Portfolio?</h1>
               <p>Woopswoops</p>
