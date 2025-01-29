@@ -54,7 +54,6 @@ main {
 }
 
 body {
-  font-family: 'WorkSans-Regular';
   font-size: var(--font-base-size);
   background-color: var(--main-bg-color);
   overflow-x: hidden;
