@@ -145,7 +145,7 @@ footer {
   height: 70px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 3rem;
   padding: 0 1rem;
@@ -168,6 +168,16 @@ ul {
   margin-left: 2rem;
   font-size: 1.5rem;
   color: inherit;
+}
+
+/* Navbar Links Styling */
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Space links evenly */
+  align-items: center; /* Center links vertically */
+  list-style: none;
+  gap: 2rem; /* Adjust gap between links as needed */
 }
 
 .nav a {
