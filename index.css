@@ -1,0 +1,242 @@
+
+
+@font-face {
+  font-family: 'YesevaOne-Regular';
+  src: local('YesevaOne-Regular'), url(./fonts/YesevaOne-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-Regular';
+  src: local('WorkSans-Regular'), url(./fonts/WorkSans-Regular.ttf) format('truetype');
+}
+
+
+/* General Styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-bg-color: rgba(222, 226, 223);
+  --text-color: rgba(33, 18, 4);
+  --primary-color: rgb(13, 57, 34);
+  --accent-color: rgb(11, 48, 29);
+  --secondary-bg-color: rgb(23, 46, 30);
+  --light-accent-color: rgba(220, 220, 221);
+  --font-base-size: 20px;
+  --font-heading-size: 2rem;
+}
+
+/* App Wrapper */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+h1 {
+  font-family: 'YesevaOne-Regular';
+  color: var(--primary-color);
+  font-size: var(--font-heading-size);
+}
+
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; /* Make main container viewport-height */
+}
+
+body {
+  font-family: 'WorkSans-Regular';
+  font-size: var(--font-base-size);
+  background-color: var(--main-bg-color);
+  overflow-x: hidden;
+}
+
+/* Layout for Sections */
+section {
+  padding: 20px;
+  color: var(--text-color);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start; /* Enhanced scroll snap */
+}
+
+/* Start Section - Flex Layout */
+.start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 15px;
+}
+
+.personal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hello {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 0;
+}
+
+#photo {
+  max-width: 40%;
+  margin-top: 5px;
+}
+
+.portrait {
+  display: block;
+  width: 100%;
+  max-width: 80%;
+  height: auto;
+  border-radius: 50%; /* Circular style for rounded portrait */
+  border: 0.5rem double var(--accent-color);
+}
+
+/* Footer Styling */
+footer {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-bg-color);
+  color: var(--light-accent-color);
+}
+
+.footer a {
+  color: inherit;
+  font-size: 1 rem;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer a:hover {
+  border-bottom: 2px solid var(--light-accent-color);
+}
+
+/* Navbar Styling */
+.nav {
+  font-family: 'YesevaOne-Regular';
+  text-decoration: none;
+  color: var(--accent-color);
+  position: sticky;
+  top: 0;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 1rem;
+  margin-bottom: 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+  list-style: none;
+}
+
+.link a {
+  text-decoration: none;
+}
+
+.title {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  color: inherit;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+/* Content Layout */
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Responsive Typography */
+#info, #exp {
+  width: 80%;
+  max-width: 1000px;
+}
+
+#expdiag {
+  height: 300px;
+  width: 100%;
+}
+
+
+.work h1 {
+  font-size: 40px;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  width: 100%;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hello, #photo {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
