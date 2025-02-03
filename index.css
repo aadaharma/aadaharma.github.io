@@ -109,6 +109,12 @@ section {
   border-radius: 50%;
 }
 
+.hide {
+  opacity: 0;
+  transform: scale(0);
+  pointer-events: none;
+}
+
 #photo {
   max-width: 40%;
   margin-top: 5px;
