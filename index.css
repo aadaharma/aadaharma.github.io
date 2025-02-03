@@ -265,3 +265,16 @@ ul {
     text-align: center;
   }
 }
+
+.iframe-container {
+  margin: 1rem 0;
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+  border: 1px solid #ccc; /* Optional: Add a border for styling */
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Remove the default iframe border */
+}
