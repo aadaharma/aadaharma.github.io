@@ -123,14 +123,23 @@ section {
   pointer-events: none;
 }
 
+.info{
+  flex: 1;
+  max-width: 60%;
+  text-align: left;
+}
+
 #photo {
+  flex: 2;
+  max-width: 40%;
   padding: 20px;
   margin-top: 5px;
 }
 
 .portrait {
   display: block;
-  max-height: 100%;
+  width: 100%;
+  height: auto;
   border: 0.5rem double var(--accent-color);
 }
 
@@ -205,16 +214,8 @@ footer {
 }
 
 
-/* Responsive Typography */
-#info, #exp {
-  width: 80%;
-  max-width: 1000px;
-}
 
-#expdiag {
-  height: 300px;
-  width: 100%;
-}
+
 
 .work {
   display: flex;
