@@ -131,7 +131,6 @@ section {
 
 .portrait {
   display: block;
-  max-width: 600px;
   max-height: 60%;
   border-radius: 50%;
   border: 0.5rem double var(--accent-color);
