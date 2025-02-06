@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: 'WorkSans-Regular';
-  src: local('WorkSans-Regular'), url(./fonts/WorkSans-Regular.ttf) format('truetype');
+  font-family: 'Gotu-Regular';
+  src: local('Gotu-Regular'), url(./fonts/Gotu-Regular.ttf) format('truetype');
 }
 
 
@@ -41,6 +41,12 @@
   color: var(--text-color);
 }
 
+h2 {
+  font-family: 'YesevaOne-Regular';
+  color: var(--primary-color);
+  font-size: var(--font-heading-size);
+}
+
 h1 {
   font-family: 'YesevaOne-Regular';
   color: var(--primary-color);
@@ -49,6 +55,7 @@ h1 {
 
 main {
   scroll-snap-type: y mandatory;
+  font-family: 'Gotu-Regular';
   overflow-y: scroll;
   height: 100vh; /* Make main container viewport-height */
 }
@@ -77,6 +84,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: aqua;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
@@ -86,6 +94,7 @@ section {
 
 .personal {
   display: flex;
+  background-color: yellowgreen;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -131,6 +140,7 @@ section {
 
 /* Footer Styling */
 footer {
+  font-family: 'Gotu-Regular';
   display: flex;
   padding: 1rem;
   justify-content: space-between;
@@ -167,14 +177,6 @@ footer {
   margin-bottom: 20px;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 3rem;
-  list-style: none;
-}
-
 .link a {
   text-decoration: none;
 }
@@ -206,13 +208,6 @@ ul {
   border-bottom: 2px solid var(--accent-color);
 }
 
-/* Content Layout */
-.content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 /* Responsive Typography */
 #info, #exp {
@@ -225,41 +220,75 @@ ul {
   width: 100%;
 }
 
-
-.work h1 {
-  font-size: 40px;
-}
-
 .work {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: cadetblue;
   align-items: center;
   text-align: center;
-  padding: 20px;
   height: 100vh;
   width: 100%;
 }
 
 .work-container {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  gap: 2rem;
+  justify-content:space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
 }
 
-.tech-stack, .projects {
+.tech-stack {
   flex: 1;
-  max-width: 45%;
+  background-color: lightcoral;
+  width: 35%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.tech-stack ul, .projects ul {
-  list-style: none;
+.projects {
+  flex: 2;
+  background-color: lightgreen;
+  width: 65%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.tech-stack ul {
+  font-family: 'Gotu-Regular';
+  list-style-type: square;
   padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.tech-stack li, .projects li {
-  margin: 0.5rem 0;
+.tech-stack li {
+  margin: 0.1rem 0;
+  font-size: 20px;
+  text-align: left;
+}
+
+.tech-stack ul ul {
+  list-style: none;
+  padding-left: 1rem ;
+  margin: 0;
+}
+
+.tech-stack ul ul li{
+  list-style: none;
+  font-size: 18px;
+  padding-left: 2rem;
+  margin: 0;
 }
 
 
