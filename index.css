@@ -62,7 +62,7 @@ main {
 
 body {
   font-size: var(--font-base-size);
-  background-color: var(--main-bg-color);
+  background-color: cadetblue;
   overflow-x: hidden;
 }
 
@@ -84,7 +84,6 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: aqua;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
@@ -94,7 +93,6 @@ section {
 
 .personal {
   display: flex;
-  background-color: yellowgreen;
   padding: 20px;
   flex-direction: row;
   justify-content: space-around;
@@ -133,7 +131,7 @@ section {
 
 .portrait {
   display: block;
-  max-width: 400px;
+  max-width: 300px;
   max-height: 60%;
   border-radius: 50%;
   border: 0.5rem double var(--accent-color);
@@ -225,7 +223,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: cadetblue;
   align-items: center;
   text-align: center;
   height: 100vh;
@@ -243,7 +240,6 @@ footer {
 
 .tech-stack {
   flex: 1;
-  background-color: lightcoral;
   width: 35%;
   height: 100%;
   padding: 20px;
