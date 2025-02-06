@@ -130,7 +130,7 @@ section {
 }
 
 .portrait {
-  border-radius: 70%; /* Circular style for rounded portrait */
+  border-radius: 50%; /* Circular style for rounded portrait */
   border: 0.5rem double var(--accent-color);
 }
 
