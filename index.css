@@ -241,6 +241,27 @@ ul {
   width: 100%;
 }
 
+.work-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.tech-stack, .projects {
+  flex: 1;
+  max-width: 45%;
+}
+
+.tech-stack ul, .projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tech-stack li, .projects li {
+  margin: 0.5rem 0;
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -266,15 +287,3 @@ ul {
   }
 }
 
-.iframe-container {
-  margin: 1rem 0;
-  width: 100%;
-  height: 300px; /* Adjust the height as needed */
-  border: 1px solid #ccc; /* Optional: Add a border for styling */
-}
-
-.iframe-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none; /* Remove the default iframe border */
-}
