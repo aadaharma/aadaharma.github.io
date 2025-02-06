@@ -129,14 +129,14 @@ section {
   margin-top: 5px;
 }
 
-.portrait {
+/*.portrait {
   display: block;
   width: 100%;
   max-width: 100%;
   height: 100%;
   border-radius: 70%; /* Circular style for rounded portrait */
-  border: 0.5rem double var(--accent-color);
-}
+  /*border: 0.5rem double var(--accent-color);
+/*
 
 /* Footer Styling */
 footer {
