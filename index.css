@@ -95,6 +95,7 @@ section {
 .personal {
   display: flex;
   background-color: yellowgreen;
+  padding: 20px;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -125,7 +126,8 @@ section {
 }
 
 #photo {
-  max-width: 100%;
+  max-width: 70%;
+  padding: 20px;
   margin-top: 5px;
 }
 
