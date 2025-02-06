@@ -132,9 +132,9 @@ section {
 .portrait {
   display: block;
   width: 100%;
-  max-width: 80%;
-  height: auto;
-  border-radius: 50%; /* Circular style for rounded portrait */
+  max-width: 100%;
+  height: 100%;
+  border-radius: 30%; /* Circular style for rounded portrait */
   border: 0.5rem double var(--accent-color);
 }
 
