@@ -54,6 +54,14 @@ h1 {
   padding: 10px;
 }
 
+h3 {
+  font-family: 'YesevaOne-Regular';
+  color: var(--primary-color);
+  font-size: var(--font-base-size);
+  padding: 5px;
+  border-bottom: 0.5rem double var(--accent-color);
+}
+
 main {
   scroll-snap-type: y mandatory;
   font-family: 'Gotu-Regular';
@@ -253,21 +261,21 @@ footer {
 
 .tech-stack {
   flex: 1;
-  width: 35%;
+  width: 20%;
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  /*border: 0.5rem double var(--accent-color);*/
 }
 
 .projects {
   flex: 2;
-  background-color: lightgreen;
-  width: 65%;
+  width: 80%;
   height: 100%;
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
 }
 
@@ -301,6 +309,34 @@ footer {
   margin: 0;
 }
 
+.project-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 60%; /* Take up 50% of the projects div */
+}
+
+.project-images img {
+  width: 100%;
+  max-width: 240px; /* Adjust the max-width as needed */
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-text {
+  width: 40%; /* Take up 50% of the projects div */
+  text-align: left;
+  font-size: 18px;
+}
+
+.project-text p{
+  padding: 10px;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
