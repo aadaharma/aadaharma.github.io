@@ -21,12 +21,12 @@
 }
 
 :root {
-  --main-bg-color: rgba(222, 226, 223);
+  --main-bg-color: rgba(244, 227, 178);
   --text-color: rgba(33, 18, 4);
   --primary-color: rgb(13, 57, 34);
-  --accent-color: rgb(11, 48, 29);
+  --accent-color: rgb(255, 108, 115);
   --secondary-bg-color: rgb(23, 46, 30);
-  --light-accent-color: rgba(220, 220, 221);
+  --light-accent-color: rgba(236, 125, 16);
   --font-base-size: 20px;
   --font-heading-size: 2rem;
 }
@@ -51,6 +51,7 @@ h1 {
   font-family: 'YesevaOne-Regular';
   color: var(--primary-color);
   font-size: var(--font-heading-size);
+  padding: 10px;
 }
 
 main {
@@ -62,7 +63,7 @@ main {
 
 body {
   font-size: var(--font-base-size);
-  background-color: cadetblue;
+  background-color: var(--main-bg-color);
   overflow-x: hidden;
 }
 
@@ -129,6 +130,20 @@ section {
   text-align: left;
 }
 
+.info p {
+  border-bottom: 0.5rem double var(--accent-color);
+  padding-bottom: 1rem; 
+  margin-bottom: 1rem; 
+}
+
+.info p:first-child {
+  border-top: 0.5rem double var(--accent-color); /* Remove the border from the last paragraph */
+}
+
+.info p:last-child {
+  border-bottom: none; /* Remove the border from the last paragraph */
+}
+
 #photo {
   flex: 2;
   max-width: 40%;
@@ -140,7 +155,7 @@ section {
   display: block;
   width: 100%;
   height: auto;
-  border: 0.5rem double var(--accent-color);
+  border: 0.5rem double var(--primary-color);
 }
 
 /* Footer Styling */
@@ -150,8 +165,8 @@ footer {
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--secondary-bg-color);
-  color: var(--light-accent-color);
+  background-color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 .footer a {
@@ -162,14 +177,14 @@ footer {
 }
 
 .footer a:hover {
-  border-bottom: 2px solid var(--light-accent-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 /* Navbar Styling */
 .nav {
   font-family: 'YesevaOne-Regular';
   text-decoration: none;
-  color: var(--accent-color);
+  color: var(--primary-color);
   position: sticky;
   top: 0;
   height: 70px;
