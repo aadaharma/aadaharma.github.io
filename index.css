@@ -317,6 +317,7 @@ footer {
 .project-images {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   gap: 1rem;
   width: 60%; /* Take up 50% of the projects div */
 }
@@ -360,6 +361,10 @@ footer {
   .nav ul {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  section {
+    scroll-snap-align: unset;
   }
 
   .work-container {
