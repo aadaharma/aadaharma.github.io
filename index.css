@@ -347,7 +347,7 @@ footer {
 }
 
 .project-text {
-  width: 40%; /* Take up 50% of the projects div */
+  width: 45%; /* Take up 50% of the projects div */
   text-align: center;
   font-size: 18px;
 }
@@ -358,10 +358,6 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
   section {
     scroll-snap-align: unset;
