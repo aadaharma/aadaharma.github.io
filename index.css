@@ -319,7 +319,7 @@ footer {
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 1rem;
-  width: 60%; /* Take up 50% of the projects div */
+  width: 40%; /* Take up 50% of the projects div */
 }
 
 .project-images img {
