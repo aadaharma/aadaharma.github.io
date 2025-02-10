@@ -316,7 +316,7 @@ footer {
 
 .project-images {
   display: flex;
-  flex-wrap: column;
+  flex-direction: column;
   gap: 1rem;
   width: 60%; /* Take up 50% of the projects div */
 }
@@ -357,25 +357,48 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .hello, #photo {
-    max-width: 100%;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  body {
-    font-size: 18px;
-  }
-
-  .title {
-    font-size: 1.25rem;
-  }
-
-  footer {
+  .nav ul {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
+  }
+
+  .work-container {
+    flex-direction: column;
+  }
+
+  .project-content {
+    flex-direction: column;
+  }
+
+  .project-images {
+    width: 100%;
+    order: 5; /* Order after project texts */
+  }
+
+  .project-text {
+    width: 100%;
+    order: 4; /* Order before project images */
+  }
+
+  .tech-stack {
+    width: 100%;
+    order: 6; /* Order after project images */
+  }
+
+  .footer {
+    order: 7; /* Order last */
+  }
+
+  .start {
+    order: 1; /* Order first */
+  }
+
+  .personal {
+    order: 2; /* Order second */
+  }
+
+  #photo {
+    order: 3; /* Order third */
   }
 }
 
