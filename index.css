@@ -21,11 +21,11 @@
 }
 
 :root {
-  --main-bg-color: rgba(244, 227, 178);
+  --main-bg-color: rgb(255, 251, 235);
   --text-color: rgba(33, 18, 4);
-  --primary-color: rgb(13, 57, 34);
-  --accent-color: rgb(255, 108, 115);
-  --secondary-bg-color: rgb(23, 46, 30);
+  --primary-color: rgb(54, 83, 20);
+  --accent-color: rgb(254, 243, 199);
+  --secondary-bg-color: rgb(54, 83, 20);
   --light-accent-color: rgba(236, 125, 16);
   --font-base-size: 20px;
   --font-heading-size: 2rem;
