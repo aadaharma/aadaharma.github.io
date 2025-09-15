@@ -130,7 +130,7 @@ section {
 }
 .embroidery-portrait {
   display: block;
-  width: auto;
+  width: 70%;
   height: auto;
 }
 .embroidery-info{
