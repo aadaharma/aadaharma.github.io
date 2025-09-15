@@ -78,6 +78,7 @@ body {
 /* Layout for Sections */
 section {
   padding: 20px;
+  padding-top: 40px;
   color: var(--text-color);
   line-height: 1.6;
   min-height: 100vh;
@@ -124,11 +125,15 @@ section {
 
 #embroidery-photo {
   order: 1;
-  max-width: 50%;
+  max-width: 40%;
   padding: 20px;
   margin-top: 5px;
 }
-
+.embroidery-portrait {
+display: block;
+  width: 100%;
+  height: auto;
+}
 .embroidery-info{
   order: 2;
   max-width: 50%;
