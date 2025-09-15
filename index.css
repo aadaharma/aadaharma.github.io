@@ -126,10 +126,11 @@ section {
 #embroidery-photo {
   padding: 20px;
   margin-top: 5px;
+  gap: 1rem;
 }
 .embroidery-portrait {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
 }
 .embroidery-info{
