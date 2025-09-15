@@ -113,7 +113,7 @@ section {
 .embroidery {
   display: flex;
   padding: 20px;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
@@ -124,13 +124,11 @@ section {
 }
 
 #embroidery-photo {
-  order: 1;
-  max-width: 40%;
   padding: 20px;
   margin-top: 5px;
 }
 .embroidery-portrait {
-display: block;
+  display: block;
   width: 100%;
   height: auto;
 }
