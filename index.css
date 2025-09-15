@@ -26,7 +26,7 @@
   --primary-color: rgb(54, 83, 20);
   --accent-color: rgb(254, 243, 199);
   --secondary-bg-color: rgb(54, 83, 20);
-  --light-accent-color: rgba(236, 125, 16);
+  --light-accent-color: rgb(136, 19, 55);
   --font-base-size: 20px;
   --font-heading-size: 2rem;
 }
@@ -109,6 +109,46 @@ section {
   gap: 1rem;
 }
 
+.embroidery {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+#embroidery-title {
+  color: var(--light-accent-color);
+}
+
+#embroidery-photo {
+  order: 1;
+  max-width: 50%;
+  padding: 20px;
+  margin-top: 5px;
+}
+
+.embroidery-info{
+  order: 2;
+  max-width: 50%;
+  text-align: left;
+}
+
+.embroidery-info p {
+  border-bottom: 0.5rem double var(--accent-color);
+  padding-bottom: 1rem; 
+  margin-bottom: 1rem; 
+}
+
+.embroidery-info p:first-child {
+  border-top: 0.5rem double var(--accent-color); /* Remove the border from the last paragraph */
+}
+
+.embroidery-info p:last-child {
+  border-bottom: none; /* Remove the border from the last paragraph */
+}
+
 .hello {
   max-width: 100%;
   height: auto;
@@ -133,7 +173,7 @@ section {
 }
 
 .info{
-  flex: 1;
+  order: 1;
   max-width: 60%;
   text-align: left;
 }
@@ -153,7 +193,7 @@ section {
 }
 
 #photo {
-  flex: 2;
+  order: 2;
   max-width: 40%;
   padding: 20px;
   margin-top: 5px;
