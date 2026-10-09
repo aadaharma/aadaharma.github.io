@@ -1,0 +1,110 @@
+{
+  "siteName": "Aada Härmä",
+  "skip": "Siirry sisältöön",
+  "nav": {
+    "label": "Päävalikko",
+    "embroidery": "Kirjonta",
+    "knitting": "Neulonta",
+    "about": "Minusta"
+  },
+  "langSwitch": {
+    "label": "In English",
+    "short": "EN",
+    "lang": "en"
+  },
+  "footer": {
+    "contactTitle": "Ota yhteyttä",
+    "email": "Sähköposti",
+    "github": "GitHub",
+    "madeBy": "Ommeltu kokoon käsin (ja koodilla)."
+  },
+  "home": {
+    "metaTitle": "Aada Härmä — käsityötä ja koodia",
+    "description": "Aada Härmän verkkotyökaluja perinteiseen käsityöhön: karjalaisen kirjonnan mallityökalu, ja neulemallien generaattori on tulossa.",
+    "eyebrow": "Käsityötä ja koodia",
+    "title": "Työkaluja perinteiseen käsityöhön, käsityöläisen tekemänä",
+    "lead": "Olen Aada: kirjoja, neuloja ja tuleva ohjelmistoinsinööri. Teen pieniä verkkotyökaluja, jotka helpottavat mallien suunnittelua. Ensimmäisenä vuorossa on karjalainen kirjonta.",
+    "cta": "Tutustu kirjontatyökaluun",
+    "projectsTitle": "Projektit",
+    "embroideryCard": {
+      "tag": "Käytettävissä",
+      "title": "Karjalaisen kirjonnan suunnittelija",
+      "text": "Piirrä karjalaisen kirjonnan malleja ruudukolle ja lataa ne PDF-tiedostona.",
+      "link": "Lue lisää"
+    },
+    "knittingCard": {
+      "tag": "Työn alla",
+      "title": "Neulemallien generaattori",
+      "text": "Kirjoneuleen mallikaavioiden generaattori. Tulossa myöhemmin.",
+      "link": "Kurkista suunnitelmiin"
+    },
+    "about": {
+      "title": "Minusta",
+      "paragraphs": [
+        "Opiskelen tietotekniikkaa Tampereen yliopistossa. Pääaineeni on tietoliikenne ja sivuaineeni ohjelmistotekniikka.",
+        "Tekniikan lisäksi rakastan kaikenlaista käsityötä neulomisesta puunveistoon. Erikoisin taitoni on luultavasti perinteinen karjalainen kirjonta: sen tarkat pistot ja huolellinen mallien suunnittelu koukuttivat minut heti ensimmäisellä kerralla.",
+        "Tällä sivustolla nämä kaksi puolta kohtaavat."
+      ],
+      "portraitAlt": "Aadan muotokuva"
+    }
+  },
+  "embroidery": {
+    "metaTitle": "Karjalaisen kirjonnan suunnittelija — Aada Härmä",
+    "description": "Ilmainen verkkotyökalu karjalaisen kirjonnan mallien piirtämiseen ruudukolle ja lataamiseen PDF-tiedostona.",
+    "eyebrow": "Projekti",
+    "title": "Karjalaisen kirjonnan suunnittelija",
+    "lead": "Verkkotyökalu karjalaisen kirjonnan mallien luonnosteluun, koska ruutupaperilla pääsee vain tiettyyn pisteeseen asti.",
+    "cta": "Avaa suunnittelija",
+    "ctaNote": "Ilmainen, toimii selaimessa",
+    "photoAlt": "Kirjottu kirjanmerkki: valkoisia karjalaistyylisiä lintuja ja kiemuroita sinisellä kankaalla",
+    "photoCaption": "Lintuja ja kiemuroita: kirjanmerkki, jonka kirjoin.",
+    "storyTitle": "Miksi tein sen",
+    "story": [
+      "Idea syntyi omasta kirjonnastani. Kun aloin suunnitella omia mallejani, huomasin nopeasti, ettei karjalaisen kirjonnan mallien tekemiseen ollut valmiita työkaluja.",
+      "Paperille luonnostelu on tietysti nopeaa ja helppoa, mutta halusin tavan koota yhteen kuvioita ja aiheita, joita karjalaisessa kirjonnassa käytetään yhä uudelleen."
+    ],
+    "screenshotAlt": "Kuvakaappaus karjalaisen kirjonnan suunnittelijasta: pistotyökalujen työkalurivi ja ruudukko, jolle on piirretty punainen lintukuvio",
+    "featuresTitle": "Mitä sillä voi tehdä",
+    "features": [
+      "Piirrä ruudukolle suoria, vinoja ja ristipistoja",
+      "Valitse langan väri",
+      "Määritä mallin leveys ja korkeus",
+      "Peru virheet tai aloita alusta tyhjällä ruudukolla",
+      "Lataa valmis malli PDF-tiedostona"
+    ],
+    "plannedTitle": "Tulossa",
+    "planned": [
+      "Valmiita perinteisiä kuvioita mallipohjiksi",
+      "Omien kuvioiden tallentaminen mallipohjiksi",
+      "Mallien jakaminen muiden kirjojien kanssa"
+    ],
+    "traditionTitle": "Karjalaisesta kirjonnasta",
+    "tradition": "Karjalainen kirjonta on perinteinen lankoja laskien tehtävä kirjontatekniikka Karjalasta. Pistot seuraavat tasakutoisen kankaan lankoja ja muodostavat geometrisia kuvioita: vinoneliöitä, ristejä, oksia ja lintuja, perinteisesti punaisella valkoiselle pellavalle.",
+    "closingTitle": "Valmiina suunnittelemaan oman mallisi?"
+  },
+  "knitting": {
+    "metaTitle": "Neulemallien generaattori — Aada Härmä",
+    "description": "Tuleva työkalu kirjoneuleen mallikaavioiden suunnitteluun.",
+    "eyebrow": "Tulossa myöhemmin",
+    "title": "Neulemallien generaattori",
+    "lead": "Työkalu kirjoneuleen mallikaavioiden suunnitteluun: juuri sellaisten, joita neulon esimerkiksi tällaisiin sukkiin.",
+    "photoAlt": "Keskeneräinen sukka sukkapuikoilla, vihreä-harmaa kirjoneulekuvio",
+    "plansTitle": "Mitä suunnittelen",
+    "plans": [
+      "Piirrä kirjoneulekuvioita ruutukaavioon",
+      "Toista kuvioita silmukkamäärään sopiviksi",
+      "Laske silmukat ja kerrokset neuletiheydestä",
+      "Vie kaaviot tulostettaviksi tai neulottaviksi"
+    ],
+    "meanwhile": "Sillä välin voit kokeilla kirjontatyökalua"
+  },
+  "notfound": {
+    "metaTitle": "Sivua ei löytynyt — Aada Härmä",
+    "description": "Sivua ei löytynyt.",
+    "title": "Tämä sivu on purkautunut",
+    "text": "Etsimääsi sivua ei ole (enää) olemassa.",
+    "back": "Etusivulle",
+    "fiText": "Sivua ei löytynyt.",
+    "fiBack": "Etusivulle"
+  }
+}

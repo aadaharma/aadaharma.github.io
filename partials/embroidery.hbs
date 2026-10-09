@@ -1,0 +1,60 @@
+{{#with t.embroidery}}
+<section class="hero container">
+  <div class="hero__text">
+    <p class="eyebrow">{{eyebrow}}</p>
+    <h1>{{title}}</h1>
+    <p class="lead">{{lead}}</p>
+    <a class="button" href="https://aadaharma.com/karelianembroiderymaker/">{{cta}} <span aria-hidden="true">↗</span></a>
+    <p class="note">{{ctaNote}}</p>
+  </div>
+  <figure class="hero__figure">
+    <img class="photo" src="/img/bookmark.webp" alt="{{photoAlt}}" width="1200" height="688" fetchpriority="high" />
+    <figcaption>{{photoCaption}}</figcaption>
+  </figure>
+</section>
+
+{{> stitch-divider}}
+
+<section class="container section prose reveal" aria-labelledby="story-title">
+  <h2 id="story-title">{{storyTitle}}</h2>
+  {{#each story}}
+  <p>{{this}}</p>
+  {{/each}}
+</section>
+
+<section class="container section">
+  <figure class="screenshot reveal">
+    <img src="/img/designer.webp" alt="{{screenshotAlt}}" width="500" height="254" loading="lazy" />
+  </figure>
+</section>
+
+<section class="container section two-col">
+  <div class="panel reveal">
+    <h2>{{featuresTitle}}</h2>
+    <ul class="stitch-list">
+      {{#each features}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="panel reveal">
+    <h2>{{plannedTitle}}</h2>
+    <ul class="stitch-list">
+      {{#each planned}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</section>
+
+<section class="container section prose reveal" aria-labelledby="tradition-title">
+  <h2 id="tradition-title">{{traditionTitle}}</h2>
+  <p>{{tradition}}</p>
+</section>
+
+<section class="container section closing reveal">
+  {{> star size=64}}
+  <h2>{{closingTitle}}</h2>
+  <a class="button" href="https://aadaharma.com/karelianembroiderymaker/">{{cta}} <span aria-hidden="true">↗</span></a>
+</section>
+{{/with}}

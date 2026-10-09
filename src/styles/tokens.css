@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Yeseva One';
+  src: url('/fonts/YesevaOne-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('/fonts/WorkSans-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+/* Colours are taken from Aada's own work: blue bookmark, red Karelian thread,
+   moss green sock yarn, on undyed linen. */
+:root {
+  --linen: #f5efe3;
+  --surface: #fbf8f1;
+  --ink: #2a1e14;
+  --muted: #6b5c4c;
+  --indigo: #1f3c8f;
+  --madder: #8a1c3a;
+  --moss: #3f5a1b;
+  --line: #d9ccb4;
+  --weave: rgb(80 55 20 / 0.035);
+  --shadow: 0 1px 2px rgb(60 40 10 / 0.08), 0 8px 24px -8px rgb(60 40 10 / 0.18);
+
+  --font-display: 'Yeseva One', Georgia, 'Times New Roman', serif;
+  --font-body: 'Work Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --radius: 6px;
+  --max-width: 72rem;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --space: clamp(3rem, 8vw, 6rem);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --linen: #131b36;
+    --surface: #1b2547;
+    --ink: #f2ebdd;
+    --muted: #b8b0a2;
+    --indigo: #a9bcff;
+    --madder: #f29ab2;
+    --moss: #b5d189;
+    --line: #34406a;
+    --weave: rgb(255 255 255 / 0.025);
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -8px rgb(0 0 0 / 0.5);
+    color-scheme: dark;
+  }
+}

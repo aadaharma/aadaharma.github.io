@@ -1,0 +1,110 @@
+{
+  "siteName": "Aada Härmä",
+  "skip": "Skip to content",
+  "nav": {
+    "label": "Main",
+    "embroidery": "Embroidery",
+    "knitting": "Knitting",
+    "about": "About"
+  },
+  "langSwitch": {
+    "label": "Suomeksi",
+    "short": "FI",
+    "lang": "fi"
+  },
+  "footer": {
+    "contactTitle": "Say hello",
+    "email": "Email",
+    "github": "GitHub",
+    "madeBy": "Stitched together by hand (and with code)."
+  },
+  "home": {
+    "metaTitle": "Aada Härmä — handcraft & code",
+    "description": "Web tools for traditional handcraft by Aada Härmä: a Karelian embroidery pattern designer, and a knitting pattern generator on the way.",
+    "eyebrow": "Handcraft & code",
+    "title": "Tools for traditional handcraft, made by a maker",
+    "lead": "I'm Aada — an embroiderer, knitter and software engineer in training. I build small web tools that make pattern design easier, starting with Karelian embroidery.",
+    "cta": "See the embroidery designer",
+    "projectsTitle": "Projects",
+    "embroideryCard": {
+      "tag": "Ready to use",
+      "title": "Karelian Embroidery Designer",
+      "text": "Draft Karelian embroidery patterns on a stitch grid and download them as a PDF.",
+      "link": "Read more"
+    },
+    "knittingCard": {
+      "tag": "In the works",
+      "title": "Knitting Pattern Generator",
+      "text": "A chart generator for stranded colourwork knitting. Coming later.",
+      "link": "Peek at the plans"
+    },
+    "about": {
+      "title": "About me",
+      "paragraphs": [
+        "I study Information Technology at Tampere University, majoring in telecommunications with a minor in software engineering.",
+        "Outside of tech I love all kinds of handcraft, from knitting to wood carving. My most unique skill is probably traditional Karelian embroidery: the precise stitching and careful pattern-making hooked me the first time I tried it.",
+        "This site is where those two sides meet."
+      ],
+      "portraitAlt": "Portrait of Aada"
+    }
+  },
+  "embroidery": {
+    "metaTitle": "Karelian Embroidery Designer — Aada Härmä",
+    "description": "A free web tool for drafting Karelian embroidery patterns on a stitch grid and downloading them as PDF.",
+    "eyebrow": "Project",
+    "title": "Karelian Embroidery Designer",
+    "lead": "A web tool for drafting Karelian embroidery patterns, because graph paper only gets you so far.",
+    "cta": "Open the designer",
+    "ctaNote": "Free, and runs in your browser",
+    "photoAlt": "An embroidered bookmark: white Karelian-style birds and spirals stitched on blue fabric",
+    "photoCaption": "Birds and spirals: a bookmark I embroidered.",
+    "storyTitle": "Why I built it",
+    "story": [
+      "The idea came from my own embroidery. When I started drafting my own patterns, I quickly noticed that there were no ready-made tools for Karelian embroidery pattern-making.",
+      "Drafting on paper is quick and easy, of course, but I wanted a way to catalogue the patterns and motifs that are used again and again in Karelian embroidery."
+    ],
+    "screenshotAlt": "Screenshot of the Karelian Embroidery Designer: a toolbar of stitch tools above a grid with a bird motif drawn in red",
+    "featuresTitle": "What it does",
+    "features": [
+      "Draw on a stitch grid with straight, diagonal and cross stitches",
+      "Pick your thread colour",
+      "Set the width and height of the pattern",
+      "Undo mistakes or start over with a clean grid",
+      "Download the finished pattern as a PDF"
+    ],
+    "plannedTitle": "What's next",
+    "planned": [
+      "Templates of traditional motifs to start from",
+      "Saving your own motifs as templates",
+      "Sharing patterns with other embroiderers"
+    ],
+    "traditionTitle": "About Karelian embroidery",
+    "tradition": "Karelian embroidery is a traditional counted-thread technique from Karelia. The stitches follow the threads of an even-weave fabric and build up geometric motifs: rhombuses, crosses, branches and birds, traditionally in red on white linen.",
+    "closingTitle": "Ready to draft your own pattern?"
+  },
+  "knitting": {
+    "metaTitle": "Knitting Pattern Generator — Aada Härmä",
+    "description": "A coming tool for designing stranded colourwork knitting charts.",
+    "eyebrow": "Coming later",
+    "title": "Knitting Pattern Generator",
+    "lead": "A tool for designing stranded colourwork charts, the kind I knit into socks like these.",
+    "photoAlt": "A sock in progress on double-pointed needles, with a green and grey colourwork pattern",
+    "plansTitle": "What I'm planning",
+    "plans": [
+      "Draw colourwork motifs on a stitch chart",
+      "Repeat motifs to fit your stitch count",
+      "Work out stitches and rows from your gauge",
+      "Export charts to print or knit from"
+    ],
+    "meanwhile": "In the meantime, try the embroidery designer"
+  },
+  "notfound": {
+    "metaTitle": "Page not found — Aada Härmä",
+    "description": "This page could not be found.",
+    "title": "This page has unravelled",
+    "text": "The page you were looking for doesn't exist (anymore).",
+    "back": "Back to the home page",
+    "fiText": "Sivua ei löytynyt.",
+    "fiBack": "Etusivulle"
+  }
+}

@@ -1,0 +1,22 @@
+<a class="skip-link" href="#main">{{t.skip}}</a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="{{urls.home}}">
+      {{> star size=28}}
+      <span>{{t.siteName}}</span>
+    </a>
+    <nav class="site-nav" aria-label="{{t.nav.label}}">
+      <ul>
+        <li><a href="{{urls.embroidery}}"{{#if (eq page 'embroidery')}} aria-current="page"{{/if}}>{{t.nav.embroidery}}</a></li>
+        <li><a href="{{urls.knitting}}"{{#if (eq page 'knitting')}} aria-current="page"{{/if}}>{{t.nav.knitting}}</a></li>
+        <li><a href="{{urls.home}}#about">{{t.nav.about}}</a></li>
+        <li>
+          <a class="lang-switch" href="{{switchUrl}}" hreflang="{{t.langSwitch.lang}}" lang="{{t.langSwitch.lang}}">
+            <span class="visually-hidden">{{t.langSwitch.label}}</span>
+            <span aria-hidden="true">{{t.langSwitch.short}}</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

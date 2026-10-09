@@ -1,0 +1,116 @@
+/* Hero shared by all pages */
+.hero {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  padding-top: clamp(2rem, 6vw, 4.5rem);
+}
+
+/* Let grid children shrink below their images' intrinsic width */
+.hero > *,
+.about > * {
+  min-width: 0;
+}
+
+@media (min-width: 52rem) {
+  .hero {
+    grid-template-columns: 1.15fr 1fr;
+  }
+}
+
+.hero__art {
+  display: grid;
+  place-items: center;
+}
+
+.hero__art .star {
+  width: min(100%, 160px);
+  height: auto;
+}
+
+@media (min-width: 52rem) {
+  .hero__art .star {
+    width: min(100%, 260px);
+  }
+}
+
+.hero__art .stitch {
+  stroke-width: 1.3;
+  stroke-dasharray: 3 2;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero__art .star {
+    animation: spin 120s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to {
+    rotate: 1turn;
+  }
+}
+
+.page-knitting .hero__figure img {
+  max-width: min(100%, 28rem);
+  margin-inline: auto;
+}
+
+/* Home: about */
+.about {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 52rem) {
+  .about {
+    grid-template-columns: 1.4fr 1fr;
+  }
+}
+
+.about__text {
+  max-width: 40rem;
+}
+
+.about__photo {
+  max-width: 22rem;
+  border-radius: 50%;
+  outline: 1.5px dashed var(--madder);
+  outline-offset: 8px;
+  justify-self: center;
+}
+
+/* Embroidery page */
+.screenshot {
+  max-width: 50rem;
+  margin-inline: auto;
+  padding: 0.75rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.screenshot img {
+  width: 100%;
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+
+.closing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.closing h1,
+.closing h2 {
+  margin-top: 1rem;
+}

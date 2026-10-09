@@ -1,0 +1,49 @@
+{{#with t.home}}
+<section class="hero container">
+  <div class="hero__text">
+    <p class="eyebrow">{{eyebrow}}</p>
+    <h1>{{title}}</h1>
+    <p class="lead">{{lead}}</p>
+    <a class="button" href="{{@root.urls.embroidery}}">{{cta}} <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="hero__art" aria-hidden="true">
+    {{> star size=260}}
+  </div>
+</section>
+
+{{> stitch-divider}}
+
+<section class="container section" aria-labelledby="projects-title">
+  <h2 id="projects-title">{{projectsTitle}}</h2>
+  <div class="card-grid">
+    <article class="card reveal">
+      <img src="/img/bookmark.webp" alt="" width="1200" height="688" loading="lazy" />
+      <div class="card__body">
+        <p class="tag tag--ready">{{embroideryCard.tag}}</p>
+        <h3><a class="card__link" href="{{@root.urls.embroidery}}">{{embroideryCard.title}}</a></h3>
+        <p>{{embroideryCard.text}}</p>
+        <p class="card__more" aria-hidden="true">{{embroideryCard.link}} →</p>
+      </div>
+    </article>
+    <article class="card reveal">
+      <img src="/img/sock.webp" alt="" width="900" height="900" loading="lazy" />
+      <div class="card__body">
+        <p class="tag tag--soon">{{knittingCard.tag}}</p>
+        <h3><a class="card__link" href="{{@root.urls.knitting}}">{{knittingCard.title}}</a></h3>
+        <p>{{knittingCard.text}}</p>
+        <p class="card__more" aria-hidden="true">{{knittingCard.link}} →</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="about" class="container section about" aria-labelledby="about-title">
+  <div class="about__text reveal">
+    <h2 id="about-title">{{about.title}}</h2>
+    {{#each about.paragraphs}}
+    <p>{{this}}</p>
+    {{/each}}
+  </div>
+  <img class="photo about__photo reveal" src="/img/portrait.webp" alt="{{about.portraitAlt}}" width="776" height="776" loading="lazy" />
+</section>
+{{/with}}

@@ -1,0 +1,24 @@
+{{#with t.knitting}}
+<section class="hero container">
+  <div class="hero__text">
+    <p class="eyebrow">{{eyebrow}}</p>
+    <h1>{{title}}</h1>
+    <p class="lead">{{lead}}</p>
+  </div>
+  <figure class="hero__figure">
+    <img class="photo" src="/img/sock.webp" alt="{{photoAlt}}" width="900" height="900" fetchpriority="high" />
+  </figure>
+</section>
+
+{{> stitch-divider}}
+
+<section class="container section prose reveal" aria-labelledby="plans-title">
+  <h2 id="plans-title">{{plansTitle}}</h2>
+  <ul class="stitch-list">
+    {{#each plans}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  <p><a href="{{@root.urls.embroidery}}">{{meanwhile}} →</a></p>
+</section>
+{{/with}}

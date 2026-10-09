@@ -1,0 +1,24 @@
+<meta charset="UTF-8" />
+<script>document.documentElement.classList.add("js")</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+{{#with (lookup t page)}}
+<title>{{metaTitle}}</title>
+<meta name="description" content="{{description}}" />
+<meta property="og:title" content="{{metaTitle}}" />
+<meta property="og:description" content="{{description}}" />
+{{/with}}
+<meta property="og:type" content="website" />
+<meta property="og:image" content="{{siteUrl}}/img/bookmark.webp" />
+{{#if canonical}}
+<link rel="canonical" href="{{canonical}}" />
+<meta property="og:url" content="{{canonical}}" />
+{{/if}}
+{{#each alternates}}
+<link rel="alternate" hreflang="{{lang}}" href="{{href}}" />
+{{/each}}
+<meta name="color-scheme" content="light dark" />
+<meta name="theme-color" content="#f5efe3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#131b36" media="(prefers-color-scheme: dark)" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="preload" href="/fonts/YesevaOne-Regular.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/WorkSans-Regular.woff" as="font" type="font/woff" crossorigin />

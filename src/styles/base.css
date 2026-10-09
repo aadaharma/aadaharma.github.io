@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  line-height: 1.65;
+  color: var(--ink);
+  background-color: var(--linen);
+  /* A faint woven-linen texture */
+  background-image:
+    repeating-linear-gradient(0deg, var(--weave) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, var(--weave) 0 1px, transparent 1px 4px);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 0.6em;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 1.6rem + 3vw, 3.75rem);
+  color: var(--indigo);
+}
+
+h2 {
+  font-size: clamp(1.6rem, 1.3rem + 1.4vw, 2.3rem);
+  color: var(--madder);
+}
+
+h3 {
+  font-size: 1.35rem;
+  color: var(--indigo);
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+a {
+  color: var(--madder);
+  /* Running-stitch underline that tightens into a solid line on hover */
+  text-decoration: underline dashed 1.5px;
+  text-underline-offset: 0.25em;
+}
+
+a:hover {
+  text-decoration-style: solid;
+}
+
+:focus-visible {
+  outline: 2px dashed var(--madder);
+  outline-offset: 3px;
+}
+
+.container {
+  width: min(100% - 2 * var(--gutter), var(--max-width));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--space) 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  padding: 0.5rem 1rem;
+  background: var(--surface);
+  z-index: 10;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

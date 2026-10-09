@@ -1,0 +1,295 @@
+/* Stitched lines: every decorative SVG path uses these */
+.stitch {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 4 2.5;
+}
+
+.star {
+  color: var(--madder);
+  flex: none;
+}
+
+.stitch-divider {
+  height: 24px;
+  margin-block: var(--space) 0;
+  color: var(--line);
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='24'%3E%3Cpath d='M0 12H10L20 2L30 12H40M10 12L20 22L30 12M20 7V17M15 12H25' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' stroke-dasharray='4 2.5'/%3E%3C/svg%3E") center / 40px 24px repeat-x;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='24'%3E%3Cpath d='M0 12H10L20 2L30 12H40M10 12L20 22L30 12M20 7V17M15 12H25' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' stroke-dasharray='4 2.5'/%3E%3C/svg%3E") center / 40px 24px repeat-x;
+}
+
+.hero + .stitch-divider {
+  color: var(--madder);
+  opacity: 0.55;
+}
+
+/* Header */
+.site-header__inner {
+  width: min(100% - 2 * var(--gutter), var(--max-width));
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 2rem;
+  padding-block: 1.25rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  color: var(--indigo);
+  text-decoration: none;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav a {
+  color: var(--ink);
+  text-decoration-color: transparent;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current='page'] {
+  color: var(--madder);
+  text-decoration-color: currentColor;
+}
+
+.lang-switch {
+  display: inline-block;
+  padding: 0.1rem 0.6rem;
+  border: 1.5px dashed var(--line);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+/* Text pieces */
+.eyebrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--moss);
+  margin-bottom: 0.75rem;
+}
+
+.lead {
+  font-size: clamp(1.1rem, 1rem + 0.4vw, 1.3rem);
+  color: var(--muted);
+  max-width: 38rem;
+}
+
+.note {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.prose {
+  max-width: 44rem;
+}
+
+/* Button: a solid patch with a stitched inner edge */
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  background: var(--madder);
+  color: var(--linen);
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  outline: 1.5px dashed color-mix(in srgb, var(--linen) 70%, transparent);
+  outline-offset: -6px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.button:focus-visible {
+  outline: 2px dashed var(--madder);
+  outline-offset: 3px;
+}
+
+/* Photos: rounded with a soft paper shadow */
+.photo {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
+/* Cards with a running-stitch edge */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+
+.card,
+.panel {
+  position: relative;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  outline: 1.5px dashed var(--line);
+  outline-offset: -10px;
+}
+
+.card {
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.card__body,
+.panel {
+  padding: 1.5rem 1.75rem 1.75rem;
+}
+
+.card__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Make the whole card clickable */
+.card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.card__more {
+  margin: 0;
+  color: var(--madder);
+  font-weight: 600;
+}
+
+.tag {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.1rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.tag--ready {
+  color: var(--moss);
+  border: 1.5px solid var(--moss);
+}
+
+.tag--soon {
+  color: var(--muted);
+  border: 1.5px dashed var(--muted);
+}
+
+/* List items marked with a little cross-stitch */
+.stitch-list {
+  list-style: none;
+  margin: 0 0 1em;
+  padding: 0;
+}
+
+.stitch-list li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.stitch-list li::before {
+  content: '';
+  position: absolute;
+  left: 0.15rem;
+  top: 0.45em;
+  width: 0.8em;
+  height: 0.8em;
+  background:
+    linear-gradient(45deg, transparent 43%, var(--madder) 43% 57%, transparent 57%),
+    linear-gradient(-45deg, transparent 43%, var(--madder) 43% 57%, transparent 57%);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: var(--space);
+  padding-bottom: 2rem;
+}
+
+.site-footer .stitch-divider {
+  margin-top: 0;
+}
+
+.site-footer__inner {
+  width: min(100% - 2 * var(--gutter), var(--max-width));
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.site-footer__title {
+  font-size: 1.4rem;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer__made {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Gentle fade-in, only when motion is welcome and JS is running */
+@media (prefers-reduced-motion: no-preference) {
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .js .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
