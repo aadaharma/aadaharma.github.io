@@ -1,0 +1,31 @@
+{{#with pattern}}
+<article class="container pattern">
+  <div class="pattern-head">
+    <div>
+      <p class="crumbs no-print"><a href="{{@root.urls.patterns}}">← {{@root.t.pattern.back}}</a></p>
+      <p class="eyebrow">{{#if craft}}{{craft}}{{/if}}{{#if difficulty}} · {{difficulty}}{{/if}}{{#if yarnWeight}} · {{yarnWeight}}{{/if}}</p>
+      <h1>{{title}}</h1>
+      {{#if summary}}<p class="lead">{{summary}}</p>{{/if}}
+      <div class="actions no-print">
+        <button type="button" class="button" data-print hidden>{{@root.t.pattern.print}}</button>
+        {{#if pdf}}<a class="button button--quiet" href="{{pdf}}" download>{{@root.t.pattern.pdf}}</a>{{/if}}
+      </div>
+    </div>
+    <table class="spec">
+      <tbody>
+        {{#each @root.t.pattern.specs}}
+        {{#if (lookup ../this @key)}}
+        <tr><th scope="row">{{this}}</th><td>{{lookup ../this @key}}</td></tr>
+        {{/if}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+  {{#if cover}}
+  <img class="photo pattern__cover" src="{{cover}}" alt="{{coverAlt}}" />
+  {{/if}}
+  <div class="pattern-body prose">
+    {{{html}}}
+  </div>
+</article>
+{{/with}}

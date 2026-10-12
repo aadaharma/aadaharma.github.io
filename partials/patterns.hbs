@@ -1,0 +1,61 @@
+{{#with t.patterns}}
+<section class="hero container">
+  <div class="hero__text">
+    <p class="eyebrow">{{eyebrow}}</p>
+    <h1>{{title}}</h1>
+    <p class="lead">{{lead}}</p>
+  </div>
+  {{#> app-frame url=heroCaption}}
+  {{{@root.art.stars}}}
+  {{/app-frame}}
+</section>
+
+{{> stitch-divider}}
+
+<section class="container section" aria-labelledby="library-title">
+  <h2 id="library-title" class="visually-hidden">{{listTitle}}</h2>
+  {{#if @root.patterns.length}}
+  {{#if @root.facets.length}}
+  <div class="filters" data-filters>
+    {{#each @root.facets}}
+    <div class="filter-row" role="group" aria-label="{{label}}">
+      <span class="filter-row__label" aria-hidden="true">{{label}}</span>
+      {{#each values}}
+      <button type="button" class="chip" data-facet="{{../key}}" data-value="{{this}}" aria-pressed="false">{{this}}</button>
+      {{/each}}
+    </div>
+    {{/each}}
+    <p class="result-count" data-result-count data-template="{{count}}" aria-live="polite"></p>
+  </div>
+  {{/if}}
+  <div class="pattern-grid">
+    {{#each @root.patterns}}
+    <article class="card pattern-card" data-craft="{{craft}}" data-difficulty="{{difficulty}}" data-yarn-weight="{{yarnWeight}}">
+      {{#if cover}}
+      <img class="pattern-card__cover" src="{{cover}}" alt="" loading="lazy" />
+      {{else}}
+      {{{swatch}}}
+      {{/if}}
+      <div class="card__body">
+        <ul class="meta-chips">
+          {{#if craft}}<li>{{craft}}</li>{{/if}}
+          {{#if difficulty}}<li>{{difficulty}}</li>{{/if}}
+          {{#if yarnWeight}}<li>{{yarnWeight}}</li>{{/if}}
+          {{#if (ne lang @root.lang)}}<li lang="{{@root.lang}}">{{lookup @root.t.patterns.languages lang}}</li>{{/if}}
+        </ul>
+        <h3><a class="card__link" href="{{url}}" hreflang="{{lang}}"><span lang="{{lang}}">{{title}}</span></a></h3>
+        {{#if summary}}<p lang="{{lang}}">{{summary}}</p>{{/if}}
+        <p class="card__more" aria-hidden="true">{{@root.t.patterns.read}} →</p>
+      </div>
+    </article>
+    {{/each}}
+  </div>
+  <p class="empty" data-empty hidden>{{noMatches}} <button type="button" class="chip" data-clear-filters>{{clearFilters}}</button></p>
+  {{else}}
+  <div class="empty">
+    {{> star size=48}}
+    <p>{{comingSoon}}</p>
+  </div>
+  {{/if}}
+</section>
+{{/with}}

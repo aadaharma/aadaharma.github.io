@@ -5,20 +5,26 @@
     <h1>{{title}}</h1>
     <p class="lead">{{lead}}</p>
   </div>
-  <figure class="hero__figure">
-    <img class="photo" src="/img/sock.webp" alt="{{photoAlt}}" width="900" height="900" fetchpriority="high" />
-  </figure>
+  {{#> app-frame url="aadaharma.com/knitting"}}
+  {{{@root.art.knit}}}
+  {{/app-frame}}
 </section>
 
 {{> stitch-divider}}
 
-<section class="container section prose reveal" aria-labelledby="plans-title">
-  <h2 id="plans-title">{{plansTitle}}</h2>
-  <ul class="stitch-list">
-    {{#each plans}}
-    <li>{{this}}</li>
-    {{/each}}
-  </ul>
-  <p><a href="{{@root.urls.embroidery}}">{{meanwhile}} →</a></p>
+<section class="container section made" aria-labelledby="plans-title">
+  <figure class="reveal">
+    <img class="photo knit-photo" src="/img/sock.webp" alt="{{photoAlt}}" width="900" height="900" loading="lazy" />
+    <figcaption>{{photoCaption}}</figcaption>
+  </figure>
+  <div class="prose reveal">
+    <h2 id="plans-title">{{plansTitle}}</h2>
+    <ul class="stitch-list">
+      {{#each plans}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p><a href="{{@root.urls.patterns}}">{{meanwhile}} →</a></p>
+  </div>
 </section>
 {{/with}}

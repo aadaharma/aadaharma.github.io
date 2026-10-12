@@ -5,6 +5,7 @@
     "label": "Päävalikko",
     "embroidery": "Kirjonta",
     "knitting": "Neulonta",
+    "patterns": "Neuleohjeet",
     "about": "Minusta"
   },
   "langSwitch": {
@@ -20,7 +21,7 @@
   },
   "home": {
     "metaTitle": "Aada Härmä — käsityötä ja koodia",
-    "description": "Aada Härmän verkkotyökaluja perinteiseen käsityöhön: karjalaisen kirjonnan mallityökalu, ja neulemallien generaattori on tulossa.",
+    "description": "Aada Härmän verkkotyökaluja ja neuleohjeita perinteiseen käsityöhön: karjalaisen kirjonnan mallityökalu, neuleohjekirjasto, ja neulemallien generaattori on tulossa.",
     "eyebrow": "Käsityötä ja koodia",
     "title": "Työkaluja perinteiseen käsityöhön, käsityöläisen tekemänä",
     "lead": "Olen Aada: kirjoja, neuloja ja tekniikan opiskelija. Teen pieniä verkkotyökaluja, jotka helpottavat mallien suunnittelua. Ensimmäisenä vuorossa on karjalainen kirjonta.",
@@ -36,7 +37,15 @@
       "tag": "Työn alla",
       "title": "Neulemallien generaattori",
       "text": "Kirjoneuleen mallikaavioiden generaattori. Tulossa myöhemmin.",
-      "link": "Kurkista suunnitelmiin"
+      "link": "Kurkista suunnitelmiin",
+      "mockupAlt": "Luonnos neulemallien generaattorista: kirjoneuleen tähtikaavio ja kahden langan väripaletti"
+    },
+    "patternsCard": {
+      "tag": "Uusi",
+      "title": "Neuleohjeet",
+      "text": "Kirjoittamani neuleohjeet: lue, suodata ja tulosta ilmaiseksi.",
+      "link": "Selaa ohjeita",
+      "mockupAlt": "Luonnos neuleohjekirjastosta: suodatinpainikkeet ohjekorttien yläpuolella"
     },
     "about": {
       "title": "Minusta",
@@ -96,7 +105,50 @@
       "Laske silmukat ja kerrokset neuletiheydestä",
       "Vie kaaviot tulostettaviksi tai neulottaviksi"
     ],
-    "meanwhile": "Sillä välin voit kokeilla kirjontatyökalua"
+    "meanwhile": "Sillä välin voit selata neuleohjeitani",
+    "photoCaption": "Keskeneräiset kirjoneulesukat: juuri tällaisia kaavioita haluan työkalun piirtävän."
+  },
+  "theme": {
+    "label": "Väriteema",
+    "auto": "Auto",
+    "light": "Vaalea",
+    "dark": "Tumma"
+  },
+  "patterns": {
+    "metaTitle": "Neuleohjeet — Aada Härmä",
+    "description": "Aada Härmän kirjoittamia ilmaisia neuleohjeita: langat, puikot, neuletiheys ja kirjoneulekaaviot. Valmiina tulostettaviksi.",
+    "eyebrow": "Ohjekirjasto",
+    "title": "Neuleohjeet",
+    "lead": "Ohjeita, jotka olen itse kirjoittanut ja neulonut. Jokaisessa on lanka, puikot ja neuletiheys, tarvittaessa kaavio, ja ne tulostuvat siististi A4-arkille.",
+    "heroCaption": "Selbun tähti · 15 × 15 silmukkaa",
+    "listTitle": "Kaikki ohjeet",
+    "filters": {
+      "craft": "Neule",
+      "difficulty": "Vaikeustaso",
+      "yarnWeight": "Langan paksuus"
+    },
+    "count": "{shown}/{total} ohjetta",
+    "read": "Lue ohje",
+    "noMatches": "Yksikään ohje ei vastaa valintoja.",
+    "clearFilters": "Tyhjennä valinnat",
+    "comingSoon": "Ensimmäiset ohjeet ovat tulossa. Kurkista pian uudelleen.",
+    "languages": {
+      "en": "Englanniksi",
+      "fi": "Suomeksi"
+    }
+  },
+  "pattern": {
+    "back": "Neuleohjeet",
+    "print": "Tulosta / tallenna PDF",
+    "pdf": "Lataa PDF",
+    "chartLabel": "Kirjoneulekaavio",
+    "specs": {
+      "sizes": "Koot",
+      "yarn": "Lanka",
+      "needles": "Puikot",
+      "gauge": "Neuletiheys",
+      "notions": "Tarvikkeet"
+    }
   },
   "notfound": {
     "metaTitle": "Sivua ei löytynyt — Aada Härmä",

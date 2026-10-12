@@ -36,21 +36,26 @@ h3 {
 
 h1 {
   font-size: clamp(2.2rem, 1.6rem + 3vw, 3.75rem);
-  color: var(--indigo);
+  color: var(--rust);
 }
 
 h2 {
   font-size: clamp(1.6rem, 1.3rem + 1.4vw, 2.3rem);
-  color: var(--madder);
+  color: var(--ink);
 }
 
 h3 {
   font-size: 1.35rem;
-  color: var(--indigo);
+  color: var(--rust);
 }
 
 p {
   margin: 0 0 1em;
+}
+
+button {
+  font: inherit;
+  color: inherit;
 }
 
 img {
@@ -64,7 +69,7 @@ figure {
 }
 
 a {
-  color: var(--madder);
+  color: var(--rust);
   /* Running-stitch underline that tightens into a solid line on hover */
   text-decoration: underline dashed 1.5px;
   text-underline-offset: 0.25em;
@@ -75,7 +80,7 @@ a:hover {
 }
 
 :focus-visible {
-  outline: 2px dashed var(--madder);
+  outline: 2px dashed var(--rust);
   outline-offset: 3px;
 }
 

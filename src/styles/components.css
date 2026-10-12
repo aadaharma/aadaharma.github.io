@@ -9,7 +9,7 @@
 }
 
 .star {
-  color: var(--madder);
+  color: var(--rust);
   flex: none;
 }
 
@@ -23,8 +23,7 @@
 }
 
 .hero + .stitch-divider {
-  color: var(--madder);
-  opacity: 0.55;
+  color: var(--saffron-soft);
 }
 
 /* Header */
@@ -45,7 +44,7 @@
   gap: 0.6rem;
   font-family: var(--font-display);
   font-size: 1.35rem;
-  color: var(--indigo);
+  color: var(--ink);
   text-decoration: none;
 }
 
@@ -66,17 +65,35 @@
 
 .site-nav a:hover,
 .site-nav a[aria-current='page'] {
-  color: var(--madder);
+  color: var(--rust);
   text-decoration-color: currentColor;
 }
 
-.lang-switch {
-  display: inline-block;
-  padding: 0.1rem 0.6rem;
+/* Small dashed pills in the nav: language switch and theme toggle */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.1rem 0.65rem;
   border: 1.5px dashed var(--line);
   border-radius: 999px;
+  background: transparent;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.pill svg {
+  width: 1em;
+  height: 1em;
+}
+
+.theme-toggle {
+  color: var(--ink);
+}
+
+.theme-toggle:hover {
+  border-color: var(--rust);
 }
 
 /* Text pieces */
@@ -85,7 +102,7 @@
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--moss);
+  color: var(--olive);
   margin-bottom: 0.75rem;
 }
 
@@ -111,7 +128,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.85rem 1.5rem;
-  background: var(--madder);
+  background: var(--rust);
   color: var(--linen);
   border-radius: var(--radius);
   font-weight: 600;
@@ -127,7 +144,7 @@
 }
 
 .button:focus-visible {
-  outline: 2px dashed var(--madder);
+  outline: 2px dashed var(--rust);
   outline-offset: 3px;
 }
 
@@ -142,6 +159,69 @@ figcaption {
   font-size: 0.9rem;
   font-style: italic;
   color: var(--muted);
+}
+
+/* App frame: a little browser window around an app's UI */
+.app-frame {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.app-frame__bar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--chrome);
+  border-bottom: 1px solid var(--line);
+}
+
+.app-frame__dots {
+  display: flex;
+  flex: none;
+  gap: 5px;
+}
+
+.app-frame__dots i {
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.app-frame__dots i:nth-child(1) { background: var(--rust); opacity: 0.7; }
+.app-frame__dots i:nth-child(2) { background: var(--saffron-soft); opacity: 0.8; }
+.app-frame__dots i:nth-child(3) { background: var(--olive); opacity: 0.6; }
+
+.app-frame__url {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  padding: 0.1rem 0.75rem;
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.app-frame__screen {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--screen);
+}
+
+.app-frame__screen > img,
+.app-frame__screen > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
 }
 
 /* Cards with a running-stitch edge */
@@ -162,6 +242,8 @@ figcaption {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   transition: transform 0.2s ease;
 }
@@ -170,15 +252,27 @@ figcaption {
   transform: translateY(-4px);
 }
 
-.card img {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+.card__media {
+  padding: 1.1rem 1.1rem 0;
+}
+
+.card__media .app-frame {
+  box-shadow: none;
 }
 
 .card__body,
 .panel {
   padding: 1.5rem 1.75rem 1.75rem;
+}
+
+.card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.card__body > :last-child {
+  margin-top: auto;
 }
 
 .card__link {
@@ -195,7 +289,7 @@ figcaption {
 
 .card__more {
   margin: 0;
-  color: var(--madder);
+  color: var(--rust);
   font-weight: 600;
 }
 
@@ -209,13 +303,13 @@ figcaption {
 }
 
 .tag--ready {
-  color: var(--moss);
-  border: 1.5px solid var(--moss);
+  color: var(--olive);
+  border: 1.5px solid var(--olive);
 }
 
 .tag--soon {
-  color: var(--muted);
-  border: 1.5px dashed var(--muted);
+  color: var(--saffron);
+  border: 1.5px dashed var(--saffron);
 }
 
 /* List items marked with a little cross-stitch */
@@ -239,8 +333,53 @@ figcaption {
   width: 0.8em;
   height: 0.8em;
   background:
-    linear-gradient(45deg, transparent 43%, var(--madder) 43% 57%, transparent 57%),
-    linear-gradient(-45deg, transparent 43%, var(--madder) 43% 57%, transparent 57%);
+    linear-gradient(45deg, transparent 43%, var(--rust) 43% 57%, transparent 57%),
+    linear-gradient(-45deg, transparent 43%, var(--rust) 43% 57%, transparent 57%);
+}
+
+/* Filter chips and small labels */
+.chip {
+  padding: 0.15rem 0.8rem;
+  border: 1.5px dashed var(--line);
+  border-radius: 999px;
+  background: transparent;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: var(--rust);
+}
+
+.chip[aria-pressed='true'] {
+  border-style: solid;
+  border-color: var(--rust);
+  background: var(--rust);
+  color: var(--linen);
+}
+
+.meta-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.meta-chips li {
+  padding: 0.05rem 0.55rem;
+  border-radius: 999px;
+  background: var(--chrome);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.button--quiet {
+  background: transparent;
+  color: var(--rust);
+  outline-color: var(--rust);
+  outline-offset: -4px;
 }
 
 /* Footer */
@@ -292,4 +431,10 @@ figcaption {
     opacity: 1;
     transform: none;
   }
+}
+
+/* Controls that need JavaScript stay hidden without it */
+html:not(.js) .theme-toggle,
+html:not(.js) [data-filters] {
+  display: none;
 }

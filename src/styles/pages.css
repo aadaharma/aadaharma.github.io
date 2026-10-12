@@ -51,8 +51,8 @@
   }
 }
 
-.page-knitting .hero__figure img {
-  max-width: min(100%, 28rem);
+.knit-photo {
+  max-width: min(100%, 26rem);
   margin-inline: auto;
 }
 
@@ -76,24 +76,26 @@
 .about__photo {
   max-width: 22rem;
   border-radius: 50%;
-  outline: 1.5px dashed var(--madder);
+  outline: 1.5px dashed var(--rust);
   outline-offset: 8px;
   justify-self: center;
 }
 
-/* Embroidery page */
-.screenshot {
-  max-width: 50rem;
-  margin-inline: auto;
-  padding: 0.75rem;
-  background: var(--surface);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+/* Embroidery and knitting: what the craft looks like, beside the story */
+.made {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
 }
 
-.screenshot img {
-  width: 100%;
-  border-radius: calc(var(--radius) - 2px);
+.made > * {
+  min-width: 0;
+}
+
+@media (min-width: 52rem) {
+  .made {
+    grid-template-columns: 1fr 1.2fr;
+  }
 }
 
 .two-col {
@@ -113,4 +115,219 @@
 .closing h1,
 .closing h2 {
   margin-top: 1rem;
+}
+
+/* Pattern library */
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.filter-row__label {
+  min-width: 8rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.result-count {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.pattern-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+
+.pattern-card .swatch,
+.pattern-card__cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.pattern-card .card__body {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.pattern-card h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1.25rem;
+}
+
+.pattern-card p {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2.5rem 1.5rem;
+  border: 1.5px dashed var(--line);
+  border-radius: var(--radius);
+  color: var(--muted);
+  text-align: center;
+}
+
+.empty p {
+  margin: 0;
+}
+
+.empty[hidden] {
+  display: none;
+}
+
+/* Pattern page */
+.crumbs {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.crumbs a {
+  color: var(--muted);
+}
+
+.pattern-head {
+  display: grid;
+  gap: 2rem;
+  padding-top: clamp(1.5rem, 4vw, 3rem);
+}
+
+.pattern-head > * {
+  min-width: 0;
+}
+
+@media (min-width: 52rem) {
+  .pattern-head {
+    grid-template-columns: 1.3fr 1fr;
+    align-items: start;
+  }
+}
+
+.spec {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.spec th {
+  padding: 0.45rem 1rem 0.45rem 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-align: left;
+  text-transform: uppercase;
+  vertical-align: top;
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+.spec td {
+  padding: 0.45rem 0;
+}
+
+.spec tr + tr {
+  border-top: 1px dashed var(--line);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.pattern__cover {
+  max-height: 32rem;
+  margin-top: 2rem;
+  object-fit: cover;
+}
+
+.pattern-body h2 {
+  margin-top: 2.25rem;
+  font-size: 1.6rem;
+}
+
+.pattern-body ol,
+.pattern-body ul {
+  padding-left: 1.4rem;
+}
+
+.pattern-body li {
+  margin-bottom: 0.4rem;
+}
+
+.pattern-body img {
+  border-radius: var(--radius);
+}
+
+.pattern-body table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.pattern-body th,
+.pattern-body td {
+  padding: 0.35rem 1rem 0.35rem 0;
+  border-bottom: 1px dashed var(--line);
+  text-align: left;
+}
+
+.chart-figure {
+  margin-block: 1rem 1.5rem;
+}
+
+.chart-wrap {
+  overflow-x: auto;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.knit-chart {
+  display: block;
+  width: 100%;
+  max-width: 30rem;
+  min-width: 16rem;
+  height: auto;
+  margin-inline: auto;
+}
+
+.pattern-body blockquote {
+  margin: 0 0 1.5rem;
+  padding: 0.75rem 1.25rem;
+  border-left: 3px dashed var(--saffron-soft);
+  background: var(--surface);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.pattern-body blockquote p:last-child {
+  margin: 0;
+}
+
+/* Tables written without column headings */
+.pattern-body thead:not(:has(th:not(:empty))) {
+  display: none;
 }

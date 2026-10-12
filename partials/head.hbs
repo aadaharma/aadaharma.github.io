@@ -1,7 +1,13 @@
 <meta charset="UTF-8" />
-<script>document.documentElement.classList.add("js")</script>
+<script>
+  document.documentElement.classList.add('js')
+  try {
+    const theme = localStorage.getItem('theme')
+    if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme
+  } catch {}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-{{#with (lookup t page)}}
+{{#with meta}}
 <title>{{metaTitle}}</title>
 <meta name="description" content="{{description}}" />
 <meta property="og:title" content="{{metaTitle}}" />
@@ -17,8 +23,8 @@
 <link rel="alternate" hreflang="{{lang}}" href="{{href}}" />
 {{/each}}
 <meta name="color-scheme" content="light dark" />
-<meta name="theme-color" content="#f5efe3" media="(prefers-color-scheme: light)" />
-<meta name="theme-color" content="#131b36" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#f6ece0" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#1c1410" media="(prefers-color-scheme: dark)" />
 <link rel="icon" href="/favicon.ico" />
 <link rel="preload" href="/fonts/YesevaOne-Regular.woff" as="font" type="font/woff" crossorigin />
 <link rel="preload" href="/fonts/WorkSans-Regular.woff" as="font" type="font/woff" crossorigin />

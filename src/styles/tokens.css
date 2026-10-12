@@ -10,19 +10,26 @@
   font-display: swap;
 }
 
-/* Colours are taken from Aada's own work: blue bookmark, red Karelian thread,
-   moss green sock yarn, on undyed linen. */
+/* Hearth palette, warm tones from Aada's own yarn and thread: rust and saffron
+   wool, olive sock yarn, on undyed oat linen. Dark mode is warm espresso.
+   The theme follows the system unless the header toggle sets data-theme. */
 :root {
-  --linen: #f5efe3;
-  --surface: #fbf8f1;
-  --ink: #2a1e14;
-  --muted: #6b5c4c;
-  --indigo: #1f3c8f;
-  --madder: #8a1c3a;
-  --moss: #3f5a1b;
-  --line: #d9ccb4;
-  --weave: rgb(80 55 20 / 0.035);
-  --shadow: 0 1px 2px rgb(60 40 10 / 0.08), 0 8px 24px -8px rgb(60 40 10 / 0.18);
+  --linen: #f6ece0;
+  --surface: #fdf7ef;
+  --chrome: #efe0cd;
+  --ink: #2f1c14;
+  --muted: #6e5546;
+  --rust: #a3401c;
+  --saffron: #8a5a0b;
+  --saffron-soft: #e2a641;
+  --olive: #556220;
+  --line: #e1ccb4;
+  --weave: rgb(110 60 20 / 0.04);
+  --shadow: 0 1px 2px rgb(80 40 10 / 0.08), 0 10px 28px -10px rgb(80 40 10 / 0.25);
+  /* Colourwork charts: main colour on contrast colour */
+  --yarn-mc: #a3401c;
+  --yarn-cc: #f4e8d6;
+  --screen: #fffaf0;
 
   --font-display: 'Yeseva One', Georgia, 'Times New Roman', serif;
   --font-body: 'Work Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -36,17 +43,41 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --linen: #131b36;
-    --surface: #1b2547;
-    --ink: #f2ebdd;
-    --muted: #b8b0a2;
-    --indigo: #a9bcff;
-    --madder: #f29ab2;
-    --moss: #b5d189;
-    --line: #34406a;
-    --weave: rgb(255 255 255 / 0.025);
-    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -8px rgb(0 0 0 / 0.5);
+  :root:not([data-theme='light']) {
+    --linen: #1c1410;
+    --surface: #281d17;
+    --chrome: #33251d;
+    --ink: #f3e6d6;
+    --muted: #c4ae9c;
+    --rust: #f0956b;
+    --saffron: #e9b35c;
+    --saffron-soft: #c98a2a;
+    --olive: #b9c77a;
+    --line: #4a372c;
+    --weave: rgb(255 220 180 / 0.025);
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.35), 0 10px 28px -10px rgb(0 0 0 / 0.6);
+    --yarn-mc: #f0956b;
+    --yarn-cc: #3a2a20;
+    --screen: #241a15;
     color-scheme: dark;
   }
+}
+
+:root[data-theme='dark'] {
+  --linen: #1c1410;
+  --surface: #281d17;
+  --chrome: #33251d;
+  --ink: #f3e6d6;
+  --muted: #c4ae9c;
+  --rust: #f0956b;
+  --saffron: #e9b35c;
+  --saffron-soft: #c98a2a;
+  --olive: #b9c77a;
+  --line: #4a372c;
+  --weave: rgb(255 220 180 / 0.025);
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.35), 0 10px 28px -10px rgb(0 0 0 / 0.6);
+  --yarn-mc: #f0956b;
+  --yarn-cc: #3a2a20;
+  --screen: #241a15;
+  color-scheme: dark;
 }

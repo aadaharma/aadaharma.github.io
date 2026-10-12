@@ -17,7 +17,11 @@
   <h2 id="projects-title">{{projectsTitle}}</h2>
   <div class="card-grid">
     <article class="card reveal">
-      <img src="/img/bookmark.webp" alt="" width="1200" height="688" loading="lazy" />
+      <div class="card__media">
+        {{#> app-frame url="aadaharma.com/karelianembroiderymaker"}}
+        <img src="/img/designer.webp" alt="" width="500" height="254" loading="lazy" />
+        {{/app-frame}}
+      </div>
       <div class="card__body">
         <p class="tag tag--ready">{{embroideryCard.tag}}</p>
         <h3><a class="card__link" href="{{@root.urls.embroidery}}">{{embroideryCard.title}}</a></h3>
@@ -26,12 +30,29 @@
       </div>
     </article>
     <article class="card reveal">
-      <img src="/img/sock.webp" alt="" width="900" height="900" loading="lazy" />
+      <div class="card__media">
+        {{#> app-frame url="aadaharma.com/knitting"}}
+        {{{@root.art.knit}}}
+        {{/app-frame}}
+      </div>
       <div class="card__body">
         <p class="tag tag--soon">{{knittingCard.tag}}</p>
         <h3><a class="card__link" href="{{@root.urls.knitting}}">{{knittingCard.title}}</a></h3>
         <p>{{knittingCard.text}}</p>
         <p class="card__more" aria-hidden="true">{{knittingCard.link}} →</p>
+      </div>
+    </article>
+    <article class="card reveal">
+      <div class="card__media">
+        {{#> app-frame url="aadaharma.com/patterns"}}
+        {{{@root.art.library}}}
+        {{/app-frame}}
+      </div>
+      <div class="card__body">
+        <p class="tag tag--ready">{{patternsCard.tag}}</p>
+        <h3><a class="card__link" href="{{@root.urls.patterns}}">{{patternsCard.title}}</a></h3>
+        <p>{{patternsCard.text}}</p>
+        <p class="card__more" aria-hidden="true">{{patternsCard.link}} →</p>
       </div>
     </article>
   </div>

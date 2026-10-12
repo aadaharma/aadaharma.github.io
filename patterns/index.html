@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="{{lang}}">
+  <head>
+    {{> head}}
+  </head>
+  <body class="page-{{page}}">
+    {{> header}}
+    <main id="main">
+      {{> (lookup . 'page')}}
+    </main>
+    {{> footer}}
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

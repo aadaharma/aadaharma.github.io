@@ -5,6 +5,7 @@
     "label": "Main",
     "embroidery": "Embroidery",
     "knitting": "Knitting",
+    "patterns": "Patterns",
     "about": "About"
   },
   "langSwitch": {
@@ -20,7 +21,7 @@
   },
   "home": {
     "metaTitle": "Aada Härmä — handcraft & code",
-    "description": "Web tools for traditional handcraft by Aada Härmä: a Karelian embroidery pattern designer, and a knitting pattern generator on the way.",
+    "description": "Web tools and knitting patterns for traditional handcraft by Aada Härmä: a Karelian embroidery pattern designer, a pattern library, and a knitting chart generator on the way.",
     "eyebrow": "Handcraft & code",
     "title": "Tools for traditional handcraft, made by a maker",
     "lead": "I'm Aada — an embroiderer, knitter and engineering student. I build small web tools that make pattern design easier, starting with Karelian embroidery.",
@@ -36,7 +37,15 @@
       "tag": "In the works",
       "title": "Knitting Pattern Generator",
       "text": "A chart generator for stranded colourwork knitting. Coming later.",
-      "link": "Peek at the plans"
+      "link": "Peek at the plans",
+      "mockupAlt": "Mockup of the knitting pattern generator: a colourwork star chart with a palette of two yarn colours"
+    },
+    "patternsCard": {
+      "tag": "New",
+      "title": "Pattern Library",
+      "text": "My written knitting patterns, free to read, filter and print.",
+      "link": "Browse patterns",
+      "mockupAlt": "Mockup of the pattern library: filter buttons above pattern cards"
     },
     "about": {
       "title": "About me",
@@ -96,7 +105,50 @@
       "Work out stitches and rows from your gauge",
       "Export charts to print or knit from"
     ],
-    "meanwhile": "In the meantime, try the embroidery designer"
+    "meanwhile": "In the meantime, browse my knitting patterns",
+    "photoCaption": "Colourwork socks in progress: the kind of chart I want the tool to draw."
+  },
+  "theme": {
+    "label": "Colour theme",
+    "auto": "Auto",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "patterns": {
+    "metaTitle": "Knitting patterns — Aada Härmä",
+    "description": "Free knitting patterns written by Aada Härmä, with yarn, needles, gauge and colourwork charts. Ready to print.",
+    "eyebrow": "Pattern library",
+    "title": "Knitting patterns",
+    "lead": "Patterns I've written and knitted myself. Each one lists the yarn, needles and gauge, has a chart where it needs one, and prints cleanly on A4.",
+    "heroCaption": "Selbu star · 15 × 15 stitches",
+    "listTitle": "All patterns",
+    "filters": {
+      "craft": "Garment",
+      "difficulty": "Difficulty",
+      "yarnWeight": "Yarn weight"
+    },
+    "count": "{shown} of {total} patterns",
+    "read": "Read pattern",
+    "noMatches": "No patterns match these filters.",
+    "clearFilters": "Clear filters",
+    "comingSoon": "The first patterns are on their way. Check back soon.",
+    "languages": {
+      "en": "In English",
+      "fi": "In Finnish"
+    }
+  },
+  "pattern": {
+    "back": "Pattern library",
+    "print": "Print / save as PDF",
+    "pdf": "Download PDF",
+    "chartLabel": "Colourwork chart",
+    "specs": {
+      "sizes": "Sizes",
+      "yarn": "Yarn",
+      "needles": "Needles",
+      "gauge": "Gauge",
+      "notions": "Notions"
+    }
   },
   "notfound": {
     "metaTitle": "Page not found — Aada Härmä",

@@ -7,10 +7,9 @@
     <a class="button" href="https://aadaharma.com/karelianembroiderymaker/">{{cta}} <span aria-hidden="true">↗</span></a>
     <p class="note">{{ctaNote}}</p>
   </div>
-  <figure class="hero__figure">
-    <img class="photo" src="/img/bookmark.webp" alt="{{photoAlt}}" width="1200" height="688" fetchpriority="high" />
-    <figcaption>{{photoCaption}}</figcaption>
-  </figure>
+  {{#> app-frame url="aadaharma.com/karelianembroiderymaker"}}
+  <img src="/img/designer.webp" alt="{{screenshotAlt}}" width="500" height="254" fetchpriority="high" />
+  {{/app-frame}}
 </section>
 
 {{> stitch-divider}}
@@ -20,12 +19,6 @@
   {{#each story}}
   <p>{{this}}</p>
   {{/each}}
-</section>
-
-<section class="container section">
-  <figure class="screenshot reveal">
-    <img src="/img/designer.webp" alt="{{screenshotAlt}}" width="500" height="254" loading="lazy" />
-  </figure>
 </section>
 
 <section class="container section two-col">
@@ -47,9 +40,15 @@
   </div>
 </section>
 
-<section class="container section prose reveal" aria-labelledby="tradition-title">
-  <h2 id="tradition-title">{{traditionTitle}}</h2>
-  <p>{{tradition}}</p>
+<section class="container section made" aria-labelledby="tradition-title">
+  <figure class="reveal">
+    <img class="photo" src="/img/bookmark.webp" alt="{{photoAlt}}" width="1200" height="688" loading="lazy" />
+    <figcaption>{{photoCaption}}</figcaption>
+  </figure>
+  <div class="prose reveal">
+    <h2 id="tradition-title">{{traditionTitle}}</h2>
+    <p>{{tradition}}</p>
+  </div>
 </section>
 
 <section class="container section closing reveal">

@@ -9,12 +9,20 @@
       <ul>
         <li><a href="{{urls.embroidery}}"{{#if (eq page 'embroidery')}} aria-current="page"{{/if}}>{{t.nav.embroidery}}</a></li>
         <li><a href="{{urls.knitting}}"{{#if (eq page 'knitting')}} aria-current="page"{{/if}}>{{t.nav.knitting}}</a></li>
+        <li><a href="{{urls.patterns}}"{{#if (eq page 'patterns')}} aria-current="page"{{/if}}{{#if (eq page 'pattern')}} aria-current="page"{{/if}}>{{t.nav.patterns}}</a></li>
         <li><a href="{{urls.home}}#about">{{t.nav.about}}</a></li>
         <li>
-          <a class="lang-switch" href="{{switchUrl}}" hreflang="{{t.langSwitch.lang}}" lang="{{t.langSwitch.lang}}">
+          <a class="pill" href="{{switchUrl}}" hreflang="{{t.langSwitch.lang}}" lang="{{t.langSwitch.lang}}">
             <span class="visually-hidden">{{t.langSwitch.label}}</span>
             <span aria-hidden="true">{{t.langSwitch.short}}</span>
           </a>
+        </li>
+        <li>
+          <button type="button" class="pill theme-toggle" data-theme-toggle aria-label="{{t.theme.label}}: {{t.theme.auto}}"
+            data-label="{{t.theme.label}}" data-auto="{{t.theme.auto}}" data-light="{{t.theme.light}}" data-dark="{{t.theme.dark}}">
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5" /><path d="M8 2a6 6 0 0 1 0 12z" fill="currentColor" /></svg>
+            <span data-theme-name>{{t.theme.auto}}</span>
+          </button>
         </li>
       </ul>
     </nav>

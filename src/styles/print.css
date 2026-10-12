@@ -1,0 +1,66 @@
+/* Patterns print on plain paper: no site chrome, black on white, charts kept whole */
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm 14mm;
+  }
+
+  /* Tripled :root outranks the dark theme selectors, so print is always light */
+  :root:root:root {
+    --linen: #fff;
+    --surface: #fff;
+    --chrome: #eee;
+    --ink: #111;
+    --muted: #444;
+    --rust: #111;
+    --line: #bbb;
+    --yarn-mc: #222;
+    --yarn-cc: #fff;
+    color-scheme: light;
+  }
+
+  body {
+    background: #fff;
+    font-size: 10.5pt;
+  }
+
+  .skip-link,
+  .site-header,
+  .site-footer,
+  .stitch-divider,
+  .no-print {
+    display: none !important;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 24pt;
+  }
+
+  .pattern-body h2 {
+    font-size: 15pt;
+    break-after: avoid;
+  }
+
+  .chart-figure,
+  .spec,
+  .pattern__cover {
+    break-inside: avoid;
+  }
+
+  .chart-wrap {
+    border-color: #999;
+  }
+
+  .k-grid {
+    stroke: #555;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

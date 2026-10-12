@@ -1,0 +1,26 @@
+/* Colours for the knitting chart drawings made by vite/knit-art.js */
+.k-mc { fill: var(--yarn-mc); }
+.k-cc { fill: var(--yarn-cc); }
+.k-screen { fill: var(--screen); }
+.k-paper { fill: var(--linen); }
+.k-chrome { fill: var(--chrome); }
+.k-line { fill: var(--line); }
+.k-accent { fill: var(--rust); opacity: 0.85; }
+.k-outline { stroke: var(--line); }
+.k-selected { fill: none; stroke: var(--olive); stroke-width: 1.5; }
+
+.k-grid {
+  stroke: var(--muted);
+  stroke-width: 0.4;
+  stroke-opacity: 0.5;
+}
+
+.k-grid--thick {
+  stroke-width: 1;
+}
+
+.k-label {
+  fill: var(--muted);
+  font-family: var(--font-body);
+  font-size: 9px;
+}

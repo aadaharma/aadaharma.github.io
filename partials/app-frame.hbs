@@ -1,0 +1,9 @@
+<div class="app-frame{{#if class}} {{class}}{{/if}}">
+  <div class="app-frame__bar" aria-hidden="true">
+    <span class="app-frame__dots"><i></i><i></i><i></i></span>
+    <span class="app-frame__url">{{url}}</span>
+  </div>
+  <div class="app-frame__screen">
+    {{> @partial-block}}
+  </div>
+</div>
