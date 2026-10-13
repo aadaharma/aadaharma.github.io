@@ -21,10 +21,10 @@
   },
   "home": {
     "metaTitle": "Aada Härmä — handcraft & code",
-    "description": "Web tools and knitting patterns for traditional handcraft by Aada Härmä: a Karelian embroidery pattern designer, a pattern library, and a knitting chart generator on the way.",
+    "description": "Web tools for fibre arts: a Karelian embroidery pattern designer, a pattern library, and a knitting pattern generator on the way.",
     "eyebrow": "Handcraft & code",
-    "title": "Tools for traditional handcraft, made by a maker",
-    "lead": "I'm Aada — an embroiderer, knitter and engineering student. I build small web tools that make pattern design easier, starting with Karelian embroidery.",
+    "title": "Tools for fibre arts, made by a maker",
+    "lead": "I'm Aada — an embroiderer, knitter and engineering student. I build small web tools that make pattern design easier and more accessible to everyone.",
     "cta": "See the embroidery designer",
     "projectsTitle": "Projects",
     "embroideryCard": {
@@ -36,14 +36,14 @@
     "knittingCard": {
       "tag": "In the works",
       "title": "Knitting Pattern Generator",
-      "text": "A chart generator for stranded colourwork knitting. Coming later.",
+      "text": "Get a knitting pattern sized to your own gauge and measurements.",
       "link": "Peek at the plans",
       "mockupAlt": "Mockup of the knitting pattern generator: a colourwork star chart with a palette of two yarn colours"
     },
     "patternsCard": {
-      "tag": "New",
+      "tag": "In the works",
       "title": "Pattern Library",
-      "text": "My written knitting patterns, free to read, filter and print.",
+      "text": "A collection of my free knitting patterns.",
       "link": "Browse patterns",
       "mockupAlt": "Mockup of the pattern library: filter buttons above pattern cards"
     },
@@ -51,18 +51,18 @@
       "title": "About me",
       "paragraphs": [
         "I recently graduated as a Bachelor of Science and am now continuing in the master's programme at Tampere University, majoring in communications engineering with a minor in economics.",
-        "Outside of tech I love all kinds of handcraft, from knitting to wood carving. My most unique skill is probably traditional Karelian embroidery: the precise stitching and careful pattern-making hooked me the first time I tried it.",
-        "This site is where those two sides meet."
+        "Outside of tech I love all kinds of handcraft, from knitting to wood carving.",
+        "For now, this site focuses on fibre arts, but I'd like to branch out into other crafts in the future."
       ],
       "portraitAlt": "Portrait of Aada"
     }
   },
   "embroidery": {
     "metaTitle": "Karelian Embroidery Designer — Aada Härmä",
-    "description": "A free web tool for drafting Karelian embroidery patterns on a stitch grid and downloading them as PDF.",
+    "description": "A free web tool for drafting Karelian embroidery patterns on a stitch grid and downloading them as a PDF.",
     "eyebrow": "Project",
     "title": "Karelian Embroidery Designer",
-    "lead": "A web tool for drafting Karelian embroidery patterns, because graph paper only gets you so far.",
+    "lead": "A web tool for drafting Karelian embroidery patterns.",
     "cta": "Open the designer",
     "ctaNote": "Free, and runs in your browser",
     "photoAlt": "An embroidered bookmark: white Karelian-style birds and spirals stitched on blue fabric",
@@ -70,7 +70,7 @@
     "storyTitle": "Why I built it",
     "story": [
       "The idea came from my own embroidery. When I started drafting my own patterns, I quickly noticed that there were no ready-made tools for Karelian embroidery pattern-making.",
-      "Drafting on paper is quick and easy, of course, but I wanted a way to catalogue the patterns and motifs that are used again and again in Karelian embroidery."
+      "Drafting on paper is quick and easy, but I wanted a way to catalogue the patterns and motifs that are used again and again in Karelian embroidery."
     ],
     "screenshotAlt": "Screenshot of the Karelian Embroidery Designer: a toolbar of stitch tools above a grid with a bird motif drawn in red",
     "featuresTitle": "What it does",
@@ -93,20 +93,21 @@
   },
   "knitting": {
     "metaTitle": "Knitting Pattern Generator — Aada Härmä",
-    "description": "A coming tool for designing stranded colourwork knitting charts.",
+    "description": "An upcoming tool for designing knitting charts and patterns from measurements.",
     "eyebrow": "Coming later",
     "title": "Knitting Pattern Generator",
-    "lead": "A tool for designing stranded colourwork charts, the kind I knit into socks like these.",
+    "lead": "A tool for designing your own projects based on your measurements and gauge.",
     "photoAlt": "A sock in progress on double-pointed needles, with a green and grey colourwork pattern",
     "plansTitle": "What I'm planning",
     "plans": [
-      "Draw colourwork motifs on a stitch chart",
-      "Repeat motifs to fit your stitch count",
-      "Work out stitches and rows from your gauge",
-      "Export charts to print or knit from"
+      "Choose a project, like socks, mittens or a hat",
+      "Enter your measurements and the size you want",
+      "Swatch, then enter your gauge in stitches and rows per 10 cm",
+      "Get a written pattern with your stitch and row counts worked out",
+      "Print it or save it as a PDF to knit from"
     ],
     "meanwhile": "In the meantime, browse my knitting patterns",
-    "photoCaption": "Colourwork socks in progress: the kind of chart I want the tool to draw."
+    "photoCaption": "Socks in progress: the kind of project I want the tool to size for you."
   },
   "theme": {
     "label": "Colour theme",
@@ -116,10 +117,10 @@
   },
   "patterns": {
     "metaTitle": "Knitting patterns — Aada Härmä",
-    "description": "Free knitting patterns written by Aada Härmä, with yarn, needles, gauge and colourwork charts. Ready to print.",
+    "description": "Free knitting patterns written by Aada Härmä.",
     "eyebrow": "Pattern library",
     "title": "Knitting patterns",
-    "lead": "Patterns I've written and knitted myself. Each one lists the yarn, needles and gauge, has a chart where it needs one, and prints cleanly on A4.",
+    "lead": "Patterns I've written and knitted myself.",
     "heroCaption": "Selbu star · 15 × 15 stitches",
     "listTitle": "All patterns",
     "filters": {

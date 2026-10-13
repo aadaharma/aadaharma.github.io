@@ -3,8 +3,8 @@
   "skip": "Siirry sisältöön",
   "nav": {
     "label": "Päävalikko",
-    "embroidery": "Kirjonta",
-    "knitting": "Neulonta",
+    "embroidery": "Kirjontatyökalu",
+    "knitting": "Neulontatyökalu",
     "patterns": "Neuleohjeet",
     "about": "Minusta"
   },
@@ -17,14 +17,14 @@
     "contactTitle": "Ota yhteyttä",
     "email": "Sähköposti",
     "github": "GitHub",
-    "madeBy": "Ommeltu kokoon käsin (ja koodilla)."
+    "madeBy": "Kursittu kokoon käsin ja koodilla."
   },
   "home": {
     "metaTitle": "Aada Härmä — käsityötä ja koodia",
-    "description": "Aada Härmän verkkotyökaluja ja neuleohjeita perinteiseen käsityöhön: karjalaisen kirjonnan mallityökalu, neuleohjekirjasto, ja neulemallien generaattori on tulossa.",
-    "eyebrow": "Käsityötä ja koodia",
-    "title": "Työkaluja perinteiseen käsityöhön, käsityöläisen tekemänä",
-    "lead": "Olen Aada: kirjoja, neuloja ja tekniikan opiskelija. Teen pieniä verkkotyökaluja, jotka helpottavat mallien suunnittelua. Ensimmäisenä vuorossa on karjalainen kirjonta.",
+    "description": "Verkkotyökaluja ja neuleohjeita: karjalaisen kirjonnan mallityökalu, neuleohjekirjasto, ja neulemallien generaattori tulossa.",
+    "eyebrow": "Kädentaitoja ja koodia",
+    "title": "Työkaluja kädentaitojen oppimiseen, käsityöläisen tekemänä",
+    "lead": "Olen Aada: kirjoja, neuloja ja tekniikan opiskelija. Teen pieniä verkkotyökaluja, jotka helpottavat mallien suunnittelua.",
     "cta": "Tutustu kirjontatyökaluun",
     "projectsTitle": "Projektit",
     "embroideryCard": {
@@ -36,7 +36,7 @@
     "knittingCard": {
       "tag": "Työn alla",
       "title": "Neulemallien generaattori",
-      "text": "Kirjoneuleen mallikaavioiden generaattori. Tulossa myöhemmin.",
+      "text": "Tuleva työkalu neulemallien suunnitteluun. Ideana on, että voit syöttää omat mitat ja neuletiheyden, ja työkalu laskee silmukka- ja kerrosmäärät.",
       "link": "Kurkista suunnitelmiin",
       "mockupAlt": "Luonnos neulemallien generaattorista: kirjoneuleen tähtikaavio ja kahden langan väripaletti"
     },
@@ -51,18 +51,17 @@
       "title": "Minusta",
       "paragraphs": [
         "Valmistuin hiljattain tekniikan kandidaatiksi ja jatkan nyt opintojani diplomi-insinöörin tutkinto-ohjelmassa Tampereen yliopistossa. Pääaineeni on tietoliikennetekniikka ja sivuaineeni taloustiede.",
-        "Tekniikan lisäksi rakastan kaikenlaista käsityötä neulomisesta puunveistoon. Erikoisin taitoni on luultavasti perinteinen karjalainen kirjonta: sen tarkat pistot ja huolellinen mallien suunnittelu koukuttivat minut heti ensimmäisellä kerralla.",
-        "Tällä sivustolla nämä kaksi puolta kohtaavat."
-      ],
+            "Tekniikan lisäksi harrastan kaikenlaisia kädentaitoja neulomisesta puunveistoon. Tämä sivusto on harrastusprojektini, jossa yhdistän teknisen osaamiseni ja intohimoni kädentaitoihin."
+          ],
       "portraitAlt": "Aadan muotokuva"
     }
   },
   "embroidery": {
-    "metaTitle": "Karjalaisen kirjonnan suunnittelija — Aada Härmä",
+    "metaTitle": "Karjalaisen kirjonnan kaavioiden piirtotyökalu",
     "description": "Ilmainen verkkotyökalu karjalaisen kirjonnan mallien piirtämiseen ruudukolle ja lataamiseen PDF-tiedostona.",
     "eyebrow": "Projekti",
     "title": "Karjalaisen kirjonnan suunnittelija",
-    "lead": "Verkkotyökalu karjalaisen kirjonnan mallien luonnosteluun, koska ruutupaperilla pääsee vain tiettyyn pisteeseen asti.",
+    "lead": "Verkkotyökalu karjalaisen kirjonnan mallien luonnosteluun.",
     "cta": "Avaa suunnittelija",
     "ctaNote": "Ilmainen, toimii selaimessa",
     "photoAlt": "Kirjottu kirjanmerkki: valkoisia karjalaistyylisiä lintuja ja kiemuroita sinisellä kankaalla",
@@ -70,7 +69,7 @@
     "storyTitle": "Miksi tein sen",
     "story": [
       "Idea syntyi omasta kirjonnastani. Kun aloin suunnitella omia mallejani, huomasin nopeasti, ettei karjalaisen kirjonnan mallien tekemiseen ollut valmiita työkaluja.",
-      "Paperille luonnostelu on tietysti nopeaa ja helppoa, mutta halusin tavan koota yhteen kuvioita ja aiheita, joita karjalaisessa kirjonnassa käytetään yhä uudelleen."
+      "Paperille luonnostelu on nopeaa ja helppoa, mutta halusin tavan koota yhteen kuvioita ja aiheita, joita karjalaisessa kirjonnassa käytetään yhä uudelleen."
     ],
     "screenshotAlt": "Kuvakaappaus karjalaisen kirjonnan suunnittelijasta: pistotyökalujen työkalurivi ja ruudukko, jolle on piirretty punainen lintukuvio",
     "featuresTitle": "Mitä sillä voi tehdä",
@@ -78,7 +77,7 @@
       "Piirrä ruudukolle suoria, vinoja ja ristipistoja",
       "Valitse langan väri",
       "Määritä mallin leveys ja korkeus",
-      "Peru virheet tai aloita alusta tyhjällä ruudukolla",
+      "Pyyhi virheet tai aloita alusta tyhjällä ruudukolla",
       "Lataa valmis malli PDF-tiedostona"
     ],
     "plannedTitle": "Tulossa",
