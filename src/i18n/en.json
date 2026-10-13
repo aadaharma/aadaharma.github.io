@@ -16,14 +16,12 @@
   "footer": {
     "contactTitle": "Say hello",
     "email": "Email",
-    "github": "GitHub",
-    "madeBy": "Stitched together by hand (and with code)."
+    "github": "GitHub"
   },
   "home": {
     "metaTitle": "Aada Härmä — handcraft & code",
     "description": "Web tools for fibre arts: a Karelian embroidery pattern designer, a pattern library, and a knitting pattern generator on the way.",
-    "eyebrow": "Handcraft & code",
-    "title": "Tools for fibre arts, made by a maker",
+    "title": "Tools for fibre arts to learn and plan your projects",
     "lead": "I'm Aada — an embroiderer, knitter and engineering student. I build small web tools that make pattern design easier and more accessible to everyone.",
     "cta": "See the embroidery designer",
     "projectsTitle": "Projects",

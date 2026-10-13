@@ -16,14 +16,12 @@
   "footer": {
     "contactTitle": "Ota yhteyttä",
     "email": "Sähköposti",
-    "github": "GitHub",
-    "madeBy": "Kursittu kokoon käsin ja koodilla."
+    "github": "GitHub"
   },
   "home": {
     "metaTitle": "Aada Härmä — käsityötä ja koodia",
     "description": "Verkkotyökaluja ja neuleohjeita: karjalaisen kirjonnan mallityökalu, neuleohjekirjasto, ja neulemallien generaattori tulossa.",
-    "eyebrow": "Kädentaitoja ja koodia",
-    "title": "Työkaluja kädentaitojen oppimiseen, käsityöläisen tekemänä",
+    "title": "Työkaluja kädentaitojen oppimiseen ja projektien suunnitteluun",
     "lead": "Olen Aada: kirjoja, neuloja ja tekniikan opiskelija. Teen pieniä verkkotyökaluja, jotka helpottavat mallien suunnittelua.",
     "cta": "Tutustu kirjontatyökaluun",
     "projectsTitle": "Projektit",
